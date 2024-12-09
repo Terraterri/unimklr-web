@@ -1,0 +1,8 @@
+.no-scroll {
+    max-height: 498px;
+    overflow-y: scroll;
+}
+
+.no-scroll ::-webkit-scrollbar {
+    display: none;
+}
