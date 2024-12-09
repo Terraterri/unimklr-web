@@ -148,8 +148,8 @@ export default function Home() {
                   <li className="nav-item">
                     <Link
                       className="nav-link dropdown-toggle"
-                      href="#"
-                      target="_blank"
+                      href="franchise"
+                      
                     >
                       Partner with us
                     </Link>
