@@ -3,7 +3,7 @@
 import React, { useContext, useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import Carousel from "react-multi-carousel";
+import Carousell from "react-multi-carousel";
 import { Carousel } from "react-bootstrap";
 import "react-multi-carousel/lib/styles.css";
 // import Sliderify from "react-sliderify";
@@ -66,23 +66,42 @@ export default function Home() {
       items: 1,
     },
   };
+  const eliteProperties = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 4,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 767 },
+      items: 3,
+    },
+    mobile: {
+      breakpoint: { max: 767, min: 0 },
+      items: 2,
+    },
+  };
   const primeProperties = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      breakpoint: { max: 1024, min: 767 },
+      items: 3,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
+      breakpoint: { max: 767, min: 0 },
+      items: 2,
     },
   };
   const featureProperties = {
@@ -305,15 +324,73 @@ export default function Home() {
       {!loading && (
         <main className="mainn">
           <div className="hero-section">
-            <div
+          <Carousel className="carsle_out">
+                <Carousel.Item>
+                 <Image
+                      src={"/assets/img/hero/terraterri-banner-bg.jpg"}
+                      width={1000}
+                      height={1000}
+                      alt="property"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                 <Image
+                      src={"/assets/img/hero/hero-1.jpg"}
+                      width={1000}
+                      height={1000}
+                      alt="property"
+                    />
+                </Carousel.Item>
+               
+              </Carousel>
+            {/* <div
               className="hero-single"
               style={{
                 background: "url(assets/img/hero/terraterri-banner-bg.jpg)",
               }}
             >
 
-<h1>Your next home is here</h1>
 
+          
+              <div className="container">
+                <div className="com fadeinout1">
+                  <div className="row align-items-center">
+                    <div className="col-lg-12 mx-auto">
+                      <h2>
+                        Explore, Immerse and Navigate your dream house <br></br>
+                        <span>...</span> in the Metaverse Way.
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="com fadeinout2">
+                  <div className="row align-items-center">
+                    <div className="col-lg-12 mx-auto">
+                      <h2>
+                        Terraterri.com<br></br> Where Real Estate becomes
+                        Ultimate Experience.
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="com fadeinout3">
+                  <div className="row align-items-center">
+                    <div className="col-lg-12 mx-auto">
+                      <h2>
+                        Immerse Yourself Navigate your property <br></br>
+                        Beyond Boundaries.
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> */}
+            
+            <div className="slide_contnt text-center">
+           <div className="bannr_titls text-center"> 
+            <h1>Your next Home is Here</h1>
+          <p>Get the Edge needed to take your business idea or sales to newer heights</p>
+          </div>
 <div className="hero-content text-center">
             <div className="container">
            
@@ -327,14 +404,14 @@ export default function Home() {
                       aria-labelledby="pills-tab-1"
                       tabIndex={0}
                     >
-                      <div className="search-form">
-                        <form action="#">
-                          <div className="row align-items-center mb-0 secrch-menu">
-                            <ul className="d-flex justify-content-start ">
+
+<div className="row align-items-center mb-0 secrch-menu">
+                            <ul className="d-flex">
                               <li className="active">
                                 <label class="custom-radio" htmlFor="buy">
                                   {" "}
                                   <input
+                                  className="opacity-0"
                                     id="buy"
                                     type="radio"
                                     name="isSales"
@@ -342,7 +419,9 @@ export default function Home() {
                                     onClick={handleChangeNP}
                                     checked={params?.isSale == "1"}
                                   />{" "}
-                                  <span class="radio-icon"></span>Buy
+                                  <span class="radio-icon">
+                                  <p>Buy</p>
+                                  </span>
                                 </label>
                               </li>
                               <li className="active">
@@ -356,7 +435,10 @@ export default function Home() {
                                     onClick={handleChangeNP}
                                     checked={params?.isRent == "1"}
                                   />{" "}
-                                  <span class="radio-icon"></span>Rent
+                                  <span class="radio-icon">
+                                  <p>Rent</p>
+                                    </span>
+                                  
                                 </label>
                               </li>
 
@@ -372,12 +454,15 @@ export default function Home() {
                                     value="listing_type_id"
                                     onClick={handleChangeNP}
                                   />
-                                  <span className="radio-icon"></span>
-                                  New Projects
+                                  <span className="radio-icon"><p> New Projects</p></span>
+                                 
                                 </label>
                               </li>
                             </ul>
                           </div>
+                      <div className="search-form">
+                        <form action="#">
+                          
                           <div className="row align-items-center mt-0 input-height">
                             <div className="col-lg-4">
                               <div
@@ -394,7 +479,7 @@ export default function Home() {
                                   placeHolder={"Search For City"}
                                   value={selectedCity}
                                 />
-                                {/* <MdMyLocation className="current-location-icon" /> */}
+                                {/*  */}
                               </div>
                             </div>
                             <div className="col-lg-3">
@@ -412,7 +497,7 @@ export default function Home() {
                                   placeHolder={"Search For Locality"}
                                   value={selectedLocality}
                                 />
-                                {/* <MdMyLocation className="current-location-icon" /> */}
+                                {/*  */}
                               </div>
                             </div>
                             <div className="col-lg-3">
@@ -483,68 +568,26 @@ export default function Home() {
               />
             )}
           </div>
-          
-              {/* <div className="container">
-                <div className="com fadeinout1">
-                  <div className="row align-items-center">
-                    <div className="col-lg-12 mx-auto">
-                      <h2>
-                        Explore, Immerse and Navigate your dream house <br></br>
-                        <span>...</span> in the Metaverse Way.
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-                <div className="com fadeinout2">
-                  <div className="row align-items-center">
-                    <div className="col-lg-12 mx-auto">
-                      <h2>
-                        Terraterri.com<br></br> Where Real Estate becomes
-                        Ultimate Experience.
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-                <div className="com fadeinout3">
-                  <div className="row align-items-center">
-                    <div className="col-lg-12 mx-auto">
-                      <h2>
-                        Immerse Yourself Navigate your property <br></br>
-                        Beyond Boundaries.
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
 
     
-          {/* <section className="about_sec pt-5">
+          <section className="about_sec pt-5">
+            <div className=""> </div>
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  <div className="abot-txt">
-                    <p>
-                      {" "}
-                      Welcome to Terraterri.com, your gateway to a revolutionary
-                      property search experience! Step into our metaverse
-                      listings and take off on an immersive journey through a
-                      world of unparalleled possibilities. Explore with ease and
-                      redefine the way you search for real estate. Welcome to a
-                      new era of property discovery!{" "}
-                    </p>
-                    <p className="text-right mt-4 fndr-txt">
-                      <b>Vijaya Reddy</b>
-                      <br></br>
-                      <span>-Founder</span>
-                    </p>
+                  <div className="desc_content_box">
+                  <p>UNIMAKLER REALTORS PRIVATE LIMITED is a professional Real Estate services company, providing a broad range of services in Real Estate consultancy, Project Marketing and Loans. Combining unmatched experience and specialized skills.</p>
+
+                  <p>UNIMAKLER REALTORS PRIVATE LIMITED have successfully offered our services to major Real estate developers in Hyderabad to market a wide range of properties including apartments, flats in gated communities, villas, commercial properties such as office spaces, retail and showroom spaces etc.</p>
+
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="text-right">
                     <Image
-                      src={"/assets/img/about-intro.jpg"}
+                      src={"/assets/img/deals-1.jpg"}
                       width={500}
                       height={300}
                       alt="property"
@@ -553,9 +596,341 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section> */}
+          </section>
 
 
+<section className="pt-5 pb-5">
+<div class="sec-heading text-center">
+      <h2>Elite Properties</h2>
+      <p>The Noteworthy Real Estate in India</p>
+   </div>
+  <div className="container">
+  <Carousell
+                responsive={eliteProperties}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={3000}
+              >
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Vasavi Atlantis</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Vasavi Group </h6>
+                  <h4> ₹1.78 Lakhs onwards </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By: 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Vasavi Atlantis</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Vasavi Group </h6>
+                  <h4> ₹1.78 Lakhs onwards </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By: 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Vasavi Atlantis</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Vasavi Group </h6>
+                  <h4> ₹1.78 Lakhs onwards </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By: 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Vasavi Atlantis</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Vasavi Group </h6>
+                  <h4> ₹1.78 Lakhs onwards </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By: 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Vasavi Atlantis</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Vasavi Group </h6>
+                  <h4> ₹1.78 Lakhs onwards </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By: 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+               
+              </Carousell>
+  </div>
+</section>
+<section className="pt-5 pb-5 gray-bg ">
+<div class="sec-heading text-center">
+      <h2>Prime Properties</h2>
+      <p>The Noteworthy Real Estate in India</p>
+   </div>
+  <div className="container">
+  <Carousell
+                responsive={primeProperties}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={3000}
+              >
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box d-flex">
+            <div className="image-box ">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Vasavi Atlantis</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Vasavi Group </h6>
+                  <h4> ₹1.78 Lakhs </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By:<br></br> 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box d-flex">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Vasavi Atlantis</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Vasavi Group </h6>
+                  <h4> ₹1.78 Lakhs </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By:<br></br> 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box d-flex">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Vasavi Atlantis</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Vasavi Group </h6>
+                  <h4> ₹1.78 Lakhs </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By:<br></br> 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box d-flex">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Vasavi Atlantis</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Vasavi Group </h6>
+                  <h4> ₹1.78 Lakhs </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By:<br></br> 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box d-flex">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Vasavi Atlantis</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Vasavi Group </h6>
+                  <h4> ₹1.78 Lakhs </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By:<br></br> 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+               
+              </Carousell>
+  </div>
+</section>
           <div className="hme_lone_sec pb-5">
             <div className="container">
               <div className="row align-items-center">
