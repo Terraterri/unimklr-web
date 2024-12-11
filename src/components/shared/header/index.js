@@ -178,7 +178,7 @@ export default function Home() {
                     </ul> */}
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/career">
+                    <Link className="nav-link" href="buddy-service">
                       Buddy Services
                     </Link>
                   </li>

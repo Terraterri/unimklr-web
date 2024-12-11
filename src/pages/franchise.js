@@ -7,6 +7,19 @@ import { IoIosMail } from "react-icons/io";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaCity, FaPhoneAlt, FaLocationDot } from "react-icons/fa";
 import { RiMessage2Fill } from "react-icons/ri";
+import { GiFamilyHouse, GiTakeMyMoney } from "react-icons/gi";
+import { MdOutlineLocationCity,MdAssuredWorkload,MdAddHomeWork } from "react-icons/md";
+import { FaHandHoldingDollar,FaShareNodes,FaHouseFlag } from "react-icons/fa6";
+import { AiOutlineDropbox } from "react-icons/ai";
+import { BsHouseUpFill } from "react-icons/bs";
+import { FcMultipleInputs } from "react-icons/fc";
+import { IoSettings } from "react-icons/io5";
+
+
+
+
+
+
 
 const Franchise = () => {
   const [formData, setFormData] = useState({
@@ -210,22 +223,28 @@ const Franchise = () => {
               <div className="col-md-6">
                 <ol class="ol-cards">
                   <li>
-                    <div class="icon bg-bluer"><i class="fa-brands fa-codepen"></i></div>
+                    <div class="icon bg-bluer">
+                      <FaCity />
+
+                    </div>
                     <div class="title">Residential REAL ESTATE franchise</div>
 
                   </li>
                   <li>
-                    <div class="icon bg-orng"><i class="fa-brands fa-html5"></i></div>
+                    <div class="icon bg-orng"><GiFamilyHouse /></div>
                     <div class="title">LUXURY REAL ESTATE franchise</div>
 
                   </li>
                   <li >
-                    <div class="icon bg-bluer"><i class="fa-brands fa-css3"></i></div>
+                    <div class="icon bg-bluer"><MdOutlineLocationCity />
+                    </div>
                     <div class="title">COMMERCIAL REAL ESTATE franchise</div>
 
                   </li>
                   <li >
-                    <div class="icon bg-orng"><i class="fa-brands fa-css3"></i></div>
+                    <div class="icon bg-orng"><GiTakeMyMoney />
+
+                    </div>
                     <div class="title">INTERNATIONAL real estate franchise</div>
 
                   </li>
@@ -234,22 +253,25 @@ const Franchise = () => {
               <div className="col-md-6">
                 <ol class="ol-cards">
                   <li  >
-                    <div class="icon bg-orng"><i class="fa-brands fa-codepen"></i></div>
+                    <div class="icon bg-orng"><AiOutlineDropbox />
+                    </div>
                     <div class="title">PLOTTING franchise</div>
 
                   </li>
                   <li>
-                    <div class="icon bg-bluer"><i class="fa-brands fa-html5"></i></div>
+                    <div class="icon bg-bluer"><FaHandHoldingDollar /></div>
                     <div class="title">LEASING &amp; Rental franchise</div>
 
                   </li>
                   <li >
-                    <div class="icon bg-orng"><i class="fa-brands fa-css3"></i></div>
+                    <div class="icon bg-orng"><BsHouseUpFill />
+                    </div>
                     <div class="title">HOUSING LOAN franchise</div>
 
                   </li>
                   <li >
-                    <div class="icon bg-bluer"><i class="fa-brands fa-css3"></i></div>
+                    <div class="icon bg-bluer"><FaHouseFlag />
+                    </div>
                     <div class="title">INTERIOR franchise</div>
 
                   </li>
@@ -417,69 +439,80 @@ const Franchise = () => {
         </div> */}
 
 
-        <div id="services" className="core-service-area with-black-bg pt-100 pb-70">
+        <div id="services" className=" with-black-bg pt-100 pb-70">
           <div className="container">
             <div className="row justify-content-center">
               <div className="main-section-title">
-                <span className="text-white">
+                <span className="text">
                   <h3>Our Core Services</h3>
                 </span>
               </div>
               <div className="row">
                 <div className="col-md-3">
-                  <div className="cccc">
-                    <h2>Lorem Ipsum
+                  <div className="cccc-blue">
+                    <h2>Residential Real Estate
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    <p>Facilitating the buying, selling, or renting of homes, apartments, and other residential properties and providing professional guidance and expertise to clients throughout the entire transaction.</p>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc">
-                    <h2>Lorem Ipsum
+                  <div className="cccc-ornge">
+                    <h2>Commercial Real Estate
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    <p>Unimakler’s Commercial real estate involves providing professional services related to the buying, selling, leasing, and management of commercial properties. which includes various property types such as office buildings, retail spaces, industrial facilities, warehouses, and more.</p>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc">
-                    <h2>Lorem Ipsum
+                  <div className="cccc-blue">
+                    <h2>Industrial Real Estate
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    <p>Unimakler’s Industrial real estate involves providing specialized services related to the buying, selling, leasing, and management of industrial properties. Which include warehouses, distribution centers, manufacturing facilities, logistics hubs, and other types of properties designed for industrial activities.</p>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc">
-                    <h2>Lorem Ipsum
+                  <div className="cccc-ornge">
+                    <h2>Luxury Real Estate
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    <p>Unimakler’s Luxury real estate INVOLVES high-end properties With exceptional quality, unique features, and a premium level of craftsmanship, design, and amenities.</p>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc">
-                    <h2>Lorem Ipsum
+                  <div className="cccc-blue">
+                    <h2>Housings Loans
+
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    <p>Unimakler facilitates the process of obtaining a housing loan for individuals looking to purchase or refinance a home. Unimakler act as intermediaries between borrowers and lenders, helping clients navigate the complexities of the loan application and approval process.
+
+                    </p>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc">
-                    <h2>Lorem Ipsum
+                  <div className="cccc-ornge">
+                    <h2>Interiors Designing
+
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    <p>professional planning, coordination, and execution of interior spaces to enhance the overall aesthetic appeal, functionality, and comfort. Whether for residential or commercial spaces, interior designers bring creativity and expertise to create well-designed and harmonious interiors.
+
+                    </p>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc">
-                    <h2>Lorem Ipsum
+                  <div className="cccc-blue">
+                    <h2>Real Estate Investments
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    <p>Unimakler deals in buying, selling, of real estate internationally. It involves transactions and investments in real estate assets that are located in different countries.
+
+                    </p>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc">
-                    <h2>Lorem Ipsum
+                  <div className="cccc-ornge">
+                    <h2>International Real Estate
+
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    <p>Unimakler helps Real estate investors in acquiring, owning, and managing properties to generate income through rental payments or capital appreciation.
+
+                    </p>
                   </div>
                 </div>
 
@@ -885,7 +918,7 @@ const Franchise = () => {
                     <div className="col-lg-10 col-md-12 col-sm-10">
                       <div className="introduced-inner-box blue-bg">
                         <div className="icon">
-                          <i className="bx bx-user"></i>
+                        <FcMultipleInputs />
                           <span>Multiple Revenue Streams</span>
                         </div>
                       </div>
@@ -893,7 +926,7 @@ const Franchise = () => {
                     <div className="col-lg-10 col-md-12 col-sm-10">
                       <div className="introduced-inner-box orange-bg">
                         <div className="icon">
-                          <i className="bx bx-buildings"></i>
+                        <FaCity />
                           <span>Pan India Community</span>
                         </div>
                       </div>
@@ -901,7 +934,7 @@ const Franchise = () => {
                     <div className="col-lg-10 col-md-12 col-sm-10">
                       <div className="introduced-inner-box blue-bg">
                         <div className="icon">
-                          <i className="bx bx-globe"></i>
+                        <FaShareNodes />
                           <span>Best Revenue Sharing</span>
                         </div>
                       </div>
@@ -909,7 +942,7 @@ const Franchise = () => {
                     <div className="col-lg-10 col-md-12 col-sm-10">
                       <div className="introduced-inner-box orange-bg">
                         <div className="icon">
-                          <i className="bx bx-certification"></i>
+                        <IoSettings />
                           <span>Next-Level Business Training</span>
                         </div>
                       </div>
@@ -917,7 +950,7 @@ const Franchise = () => {
                     <div className="col-lg-10 col-md-12 col-sm-10">
                       <div className="introduced-inner-box blue-bg">
                         <div className="icon">
-                          <i className="bx bxs-hand-right"></i>
+                        <MdAssuredWorkload />
                           <span>Assured Projects-Specific Leads</span>
                         </div>
                       </div>
@@ -925,7 +958,7 @@ const Franchise = () => {
                     <div className="col-lg-10 col-md-12 col-sm-10">
                       <div className="introduced-inner-box orange-bg">
                         <div className="icon">
-                          <i className="bx bxs-home-circle"></i>
+                        <MdAddHomeWork />
                           <span>Business Development Manager Support</span>
                         </div>
                       </div>
