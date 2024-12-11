@@ -38,7 +38,7 @@
   }
   */
   
-  .content {
+  .contentt {
       width: calc(var(--size) * 6vmin);
     height: calc(var(--size) * 6vmin);
       transform: rotateX(45deg) rotateZ(45deg);

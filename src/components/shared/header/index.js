@@ -37,7 +37,7 @@ export default function Home() {
         ></meta>
         <meta name="description" content></meta>
         <meta name="keywords" content></meta>
-        <title>Terra Terri</title>
+        <title>Unimakler</title>
         <link
           rel="icon"
           type="image/x-icon"
