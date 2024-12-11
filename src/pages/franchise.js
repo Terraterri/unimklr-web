@@ -482,14 +482,14 @@ const Franchise = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
                   </div>
                 </div>
-               
+
               </div>
             </div>
           </div>
         </div>
 
 
-        <div id="services" className="core-service-area with-black-bg pt-100 pb-70">
+        {/* <div id="services" className=" with-black-bg pt-100 pb-70">
           <div className="container">
             <div className="row justify-content-center">
               <div className="main-section-title">
@@ -499,66 +499,82 @@ const Franchise = () => {
               </div>
               <div className="row">
                 <div className="col-md-3">
-                  <div className="cccc2">
-                    <h2>Lorem Ipsum
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                  <div className="cccc2blue">
+                    <div className="cccc2inner">
+                      <h2>Lorem Ipsum
+                      </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc2">
-                    <h2>Lorem Ipsum
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                  <div className="cccc2orng">
+                    <div className="cccc2inner">
+                      <h2>Lorem Ipsum
+                      </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc2">
-                    <h2>Lorem Ipsum
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                  <div className="cccc2blue">
+                    <div className="cccc2inner">
+                      <h2>Lorem Ipsum
+                      </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc2">
-                    <h2>Lorem Ipsum
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                  <div className="cccc2orng">
+                    <div className="cccc2inner">
+                      <h2>Lorem Ipsum
+                      </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc2">
-                    <h2>Lorem Ipsum
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                  <div className="cccc2blue">
+                    <div className="cccc2inner">
+                      <h2>Lorem Ipsum
+                      </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc2">
-                    <h2>Lorem Ipsum
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                  <div className="cccc2orng">
+                    <div className="cccc2inner">
+                      <h2>Lorem Ipsum
+                      </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc2">
-                    <h2>Lorem Ipsum
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                  <div className="cccc2blue">
+                    <div className="cccc2inner">
+                      <h2>Lorem Ipsum
+                      </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="cccc2">
-                    <h2>Lorem Ipsum
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                  <div className="cccc2orng">
+                    <div className="cccc2inner">
+                      <h2>Lorem Ipsum
+                      </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
+                    </div>
                   </div>
                 </div>
-               
+
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
 
