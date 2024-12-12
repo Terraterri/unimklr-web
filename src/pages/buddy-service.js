@@ -1,6 +1,8 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+// import { Carousel } from "react-bootstrap";
+
 
 const BuddyService = () => {
 
@@ -33,15 +35,29 @@ const BuddyService = () => {
                     <div className="auto-container">
                         <div className="row">
                             <div className="col-md-7 col-sm-8 col-xs-12">
-                                <div className="block1">
-                                    <p> Your dedicated partner in achieving property goals </p>
-                                </div>
-                                <div className="block2">
-                                    <p> Understands your unique Real Estate needs and deliver tailored solutions </p>
-                                </div>
-                                <div className="block3">
-                                    <p> Professionalism, Integrity, and Transparency are at the core of everything we do </p>
-                                </div>
+
+
+                                <Carousel className=""
+                                    responsive={responsive}
+                                    infinite={true}
+                                    autoPlay={true}
+                                    autoPlaySpeed={3000}
+                                    showDots={false}
+                                    arrows={false}
+                                >
+
+                                    <div>
+                                        <p>Your dedicated partner in achieving property goals</p>
+                                    </div>
+                                    <div>
+                                        <p>Understands your unique Real Estate needs and deliver tailored solutions</p>
+                                    </div>
+                                    <div>
+                                        <p>Professionalism, Integrity, and Transparency are at the core of everything we do</p>
+                                    </div>
+
+                                </Carousel>
+
                             </div>
 
                             <div className="col-md-5 col-sm-4 col-xs-12 buddy-m">
@@ -83,7 +99,7 @@ const BuddyService = () => {
                 <section class="why-buddy sec-pad">
                     <div class="auto-container">
                         <div class="row align-items-center clearfix">
-                            <div class="col-lg-5 col-md-12 col-sm-12">
+                            <div class="col-lg-2 col-md-12 col-sm-12">
                                 <div class="why-sec-title">
                                     <h2>Why</h2>
                                     <h2 class="why-1">Choose</h2>
@@ -93,48 +109,56 @@ const BuddyService = () => {
                                     <img src="assets/img/line.gif" alt />
                                 </div>
                             </div>
-                            <div class="col-lg-7 col-md-12 col-sm-12">
+                            <div class="col-lg-10 col-md-12 col-sm-12">
                                 <div class="content_block_3">
                                     <div class="content-box">
                                         <div class="row align-items-center clearfix justify-content-center">
-                                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                                <div class="abcd-box blue-bg">
-                                                    <h5> PROFESSIONAL SERVICE </h5>
+                                            <div className='col-md-7'>
+                                                <div className='row align-items-center'>
+                                                    <div className='col-md-4'>
+                                                        <div class="abcd-box orange-bg">
+                                                            <h5> CLIENT-CENTRIC APPROACH </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div className='col-md-4'>
+                                                        <div class="abcd-box blue-bg onee mb-2">
+                                                            <h5> PROFESSIONAL SERVICE </h5>
+                                                        </div>
+                                                        <div class="abcd-box blue-bg twoo">
+                                                            <h5> DEDICATED <br /> SERVICE </h5>
+
+                                                        </div>
+                                                    </div>
+                                                    <div className='col-md-4'>
+                                                        <div class="abcd-box orange-bg">
+                                                            <h5> CLIENT-CENTRIC APPROACH </h5>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                                <div class="abcd-box orange-bg">
-                                                    <h5> DOMAIN <br /> EXPERT </h5>
+                                            
+                                            <div className='col-md-5'>
+                                                <div className='row align-items-center'>
+                                                    <div className='col-md-6'>
+                                                        <div class="abcd-box orange-bg twoo">
+                                                            <h5> DOMAIN <br /> EXPERT </h5>
+
+                                                        </div>
+                                                        <div class="abcd-box orange-bg mt-2">
+                                                            <h5> SAVES TIME AND EFFORTS </h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <div className='col-md-6'>
+                                                        <div class="abcd-box blue-bg">
+                                                            <h5> MARKET <br /> KNOWLEDGE </h5>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+
                                         </div>
-                                        <div class="row align-items-center clearfix justify-content-center">
-                                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                                <div class="abcd-box orange-bg">
-                                                    <h5> CLIENT-CENTRIC APPROACH </h5>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                                <div class="abcd-box grey-bg">
-                                                    <h5 class="blue"> TECH <br /> SAVVY </h5>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                                <div class="abcd-box blue-bg">
-                                                    <h5> MARKET <br /> KNOWLEDGE </h5>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                                <div class="abcd-box blue-bg">
-                                                    <h5>DEDICATED SERVICE</h5>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                                <div class="abcd-box orange-bg">
-                                                    <h5> SAVES VALUABLE TIME AND EFFORTS </h5>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>

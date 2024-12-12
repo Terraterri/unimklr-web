@@ -1139,6 +1139,8 @@ p {
   grid-area: title;
   font-weight: 600;
   font-size: 1.25rem;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 .ol-cards>li>.descr {
@@ -1151,6 +1153,7 @@ p {
   color: var(--accent-color);
   font-size: var(--numberSize);
   font-weight: 700;
+  display: none;
 }
 
 @media (max-width: 40rem) {
@@ -1397,20 +1400,20 @@ p {
 
 /* buddy services */
 
-.block1 {
+/* .block1 {
   opacity: 0;
-  animation: fadeIn 9s infinite;
+  animation: fadeIn 10s infinite;
 }
 
 .block2 {
   opacity: 0;
-  animation: fadeIn 9s infinite;
+  animation: fadeIn 15s infinite;
   animation-delay: 3s;
 }
 
 .block3 {
   opacity: 0;
-  animation: fadeIn 9s infinite;
+  animation: fadeIn 20s infinite;
   animation-delay: 6s;
 }
 
@@ -1432,7 +1435,9 @@ p {
 .block2 p,
 .block3 p {
   position: absolute;
-}
+} */
+
+
 
 .image-box {
   position: relative;
@@ -1461,7 +1466,7 @@ p {
   text-align: center;
   font-size: 46px;
   line-height: 50px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .sec-pad {
@@ -1520,17 +1525,141 @@ p {
 }
 
 .why-sec-title h2 {
-  font-size: 75px;
+  font-size: 40px;
 }
 
-.why-sec-title h2 {
-  font-size: 75px;
-}
 
 .why-sec-title h2.why-1 {
-  text-align: center;
+  text-align: start;
 }
 
 .why-sec-title h2.why-2 {
-  text-align: right;
+  text-align: start;
+}
+
+/* .location-area.category-area1 {
+  padding-top: 35px;
+  padding-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.category-area1 {
+  position: relative;
+  background-color: #e8f0fe;
+}
+
+.title_ot p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.location-area .row .col-md-3 a {
+  width: 100% !important;
+}
+
+.cardBoxx {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .4), 0 2px 25px 0 rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 400px;
+}
+
+.cardtxt {
+  height: 100%;
+  background: #000814;
+  border-radius: 20px;
+  z-index: 5;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: inset 0 30px 60px -12px rgba(0, 0, 0, .4), inset 0 18px 36px -18px rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+}
+.cardtxt img {
+  position: absolute;
+  max-width: 100%;
+  object-fit: cover;
+  background-color: #000;
+  opacity: .4;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.cardt_inr {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  padding: 0 15px;
+}
+.cardBoxx h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  color: #0ff !important;
+}
+.cardBoxx span {
+  color: #fff !important;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.cardtxt .contentt {
+  flex-wrap: wrap;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: .3s ease-in-out;
+  padding: 0 15px;
+  height: auto !important;
+}
+.contentt h3 {
+  color: #0ff !important;
+  margin-bottom: 10px;
+}
+.contentt p {
+  color: #fff !important;
+  font-size: 17px !important;
+}
+.contentt p.text-right {
+  text-align: right !important;
+  width: 100%;
+  line-height: 15px;
+  margin-top: 12px;
+}
+.contentt p a {
+  color: #fff !important;
+  color: #fff395 !important;
+} */
+
+.cardtxt:hover .contentt {
+  transform: translateY(0);
+  opacity: 1;
+  /* height: 210px !important; */
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+  line-height: 25px;
+}
+.cardBoxx {
+  width: 357px !important;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.cardBoxx h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  color: #0ff !important;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.contentt h3 {
+  color: #0ff !important;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 25px;
 }

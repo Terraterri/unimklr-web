@@ -14009,6 +14009,9 @@ button.lists_out {
 .contentt p {
     color: #fff !important;
     font-size: 17px !important;
+    height: 250px;
+    width: 100%;
+    overflow-y: scroll;
 }
 
 .contentt p.text-right {
@@ -17634,6 +17637,7 @@ span.listing-price-title.by_titls span {
         color: #fff;
         font-size: 19px;
         line-height: 28px;
+        text-shadow: 2px 2px 3px #000000;
     }
 
     .clearfix:after {
