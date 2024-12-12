@@ -21,12 +21,10 @@ import { SlLocationPin } from "react-icons/sl";
 // import { TbGeometry } from "react-icons/tb";
 import { HiOutlineCurrencyRupee } from "react-icons/hi2";
 import { LiaCitySolid } from "react-icons/lia";
-import { BsStarHalf } from "react-icons/bs";
-import { BsStarFill } from "react-icons/bs";
-import { BsStar } from "react-icons/bs";
-import { BiRupee } from "react-icons/bi";
-import { BsArrowRightShort } from "react-icons/bs";
-import { MdArrowForwardIos } from "react-icons/md";
+
+import { BiSolidUser } from "react-icons/bi";
+import { MdDateRange } from "react-icons/md";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 import {
   getAllCities,
@@ -388,8 +386,8 @@ export default function Home() {
             
             <div className="slide_contnt text-center">
            <div className="bannr_titls text-center"> 
-            <h1>Your next Home is Here</h1>
-          <p>Get the Edge needed to take your business idea or sales to newer heights</p>
+            <h1>Discover Homes that Speak to You</h1>
+          <p>Unimakler - Where Your Property Journey Begins</p>
           </div>
 <div className="hero-content text-center">
             <div className="container">
@@ -441,7 +439,7 @@ export default function Home() {
                                   
                                 </label>
                               </li>
-
+{/* 
                               <li className="live1">
                                 <label
                                   className="custom-radio"
@@ -457,7 +455,7 @@ export default function Home() {
                                   <span className="radio-icon"><p> New Projects</p></span>
                                  
                                 </label>
-                              </li>
+                              </li> */}
                             </ul>
                           </div>
                       <div className="search-form">
@@ -571,16 +569,95 @@ export default function Home() {
             </div>
           </div>
 
-    
+<section>
+  <div className="container">
+  <div className="row prop_out">
+              <div className="col-6 col-md-4 col-lg-2 ">
+                <div
+                  className="category-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".25s"
+                >
+                  <div className="text-center">
+                  <h3 className="category-titlee">42<span>+</span></h3>
+                  <h4 className="category-title">Cities</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 ">
+                <div
+                  className="category-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".25s"
+                >
+                  <div className="text-center">
+                  <h3 className="category-titlee">9<span>+</span></h3>
+                  <h4 className="category-title">Countries</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 ">
+                <div
+                  className="category-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".25s"
+                >
+                  <div className="text-center">
+                  <h3 className="category-titlee">200<span>+</span></h3>
+                  <h4 className="category-title">Projects</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 ">
+                <div
+                  className="category-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".25s"
+                >
+                  <div className="text-center">
+                  <h3 className="category-titlee">42<span>+</span></h3>
+                  <h4 className="category-title">Developers</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 ">
+                <div
+                  className="category-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".25s"
+                >
+                  <div className="text-center">
+                  <h3 className="category-titlee">42<span>+</span></h3>
+                  <h4 className="category-title">Customers</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 ">
+                <div
+                  className="category-item wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".25s"
+                >
+                  <div className="text-center">
+                  <h3 className="category-titlee">4200<span>Cr</span></h3>
+                  <h4 className="category-title">Property Sold</h4>
+                  </div>
+                </div>
+              </div>
+       
+            </div>
+  </div>
+</section>
           <section className="about_sec pt-5">
             <div className=""> </div>
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-6">
                   <div className="desc_content_box">
-                  <p>UNIMAKLER REALTORS PRIVATE LIMITED is a professional Real Estate services company, providing a broad range of services in Real Estate consultancy, Project Marketing and Loans. Combining unmatched experience and specialized skills.</p>
+                  <h3 className="mb-3">About Unimakler</h3>
+                  <p className="text-justify">UNIMAKLER REALTORS PRIVATE LIMITED is a professional Real Estate services company, providing a broad range of services in Real Estate consultancy, Project Marketing and Loans. Combining unmatched experience and specialized skills.</p>
 
-                  <p>UNIMAKLER REALTORS PRIVATE LIMITED have successfully offered our services to major Real estate developers in Hyderabad to market a wide range of properties including apartments, flats in gated communities, villas, commercial properties such as office spaces, retail and showroom spaces etc.</p>
+                  <p className="text-justify">UNIMAKLER REALTORS PRIVATE LIMITED have successfully offered our services to major Real estate developers in Hyderabad to market a wide range of properties including apartments, flats in gated communities, villas, commercial properties such as office spaces, retail and showroom spaces etc.</p>
 
                   </div>
                 </div>
@@ -765,6 +842,7 @@ export default function Home() {
               </Carousell>
   </div>
 </section>
+
 <section className="pt-5 pb-5 gray-bg ">
 <div class="sec-heading text-center">
       <h2>Prime Properties</h2>
@@ -931,18 +1009,43 @@ export default function Home() {
               </Carousell>
   </div>
 </section>
-          <div className="hme_lone_sec pb-5">
+<section>
+<div className="hme_lone_sec pb-5 pt-50">
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-6">
                   <div className="lon_img text-center">
-                    <Image
-                      src={"/assets/img/loan-img.jpg"}
-                      width={500}
-                      height={500}
+                    <img
+                      src={"/assets/img/tieup_img.png"}
+                 
                     />
+                    {/* <img
+                      src={"/assets/img/franchise.jpg"}
+                 
+                    /> */}
                   </div>
                 </div>
+                <div className="col-md-6">
+                  <div className="lon_txt">
+                    <h3>Franchising Unimakler</h3>
+                    <p> With 15+ years of sound Real Estate industry expertize. Unimakler offers new franchise model and inviting upcoming investors for strategic partnership to expand their foot print via Franchising.</p>
+<p>The vision of Unimakler is to achieve the Highest possible standards of Real Estate market while establishing the our franchises as the premier and preferred Real Estate consultants in India.
+                    </p>
+                    <div className="d-flex mt-4">
+                      <button>Book your Franchise</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+</section>
+          
+<section>
+<div className="hme_lone_sec pb-5">
+            <div className="container">
+              <div className="row align-items-center">
                 <div className="col-md-6">
                   <div className="lon_txt">
                     <h3>You need a home loan, right? Get Pre-approval.</h3>
@@ -950,16 +1053,167 @@ export default function Home() {
                       Get pre-approval from a lender with competitive Homeloan
                       interest rates
                     </p>
+                    <p>The vision of Unimakler is to achieve the Highest possible standards of Real Estate market while establishing the our franchises as the premier and preferred Real Estate consultants in India.</p>
                     <div className="d-flex mt-4">
                       <button>Get Pre Approved</button>
-                      <button>EMI Calculator</button>
+                      {/* <button>EMI Calculator</button> */}
                     </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="lon_img text-center">
+                  <img
+                      src={"/assets/img/loan-immg.jpg"}
+                 
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      
+</section>
+
+<section className="pt-5 pb-5 gray-bg ">
+  <div className="container">
+      <div class="sec-heading text-center mb-3">
+          <h2>Our Distinguished Services</h2>
+          <p>Explore prime properties based on your recommendation</p>
+      </div>
+
+      <div className="row">
+      <div class="col-md-4">
+                <Link href="#" class="curated-box" style={{
+              background: "url(assets/img/new-project.webp)",
+            }}>
+                    <h3 class="title">Residential Realestate </h3>
+                </Link>
+            </div>
+      <div class="col-md-4">
+                <Link href="#" class="curated-box" style={{
+              background: "url(assets/img/ready-to-move.webp)",
+            }}>
+                    <h3 class="title">Commercial Realestate</h3>
+                </Link>
+            </div>
+      <div class="col-md-4">
+                <Link href="#" class="curated-box" style={{
+              background: "url(assets/img/yuva-city.jpg)",
+            }}>
+                    <h3 class="title">Interior Designing</h3>
+                </Link>
+            </div>
+      <div class="col-md-3 px-2">
+                <Link href="#" class="curated-box" style={{
+              background: "url(assets/img/new-project.webp)",
+            }}>
+                    <h3 class="title">Housing Loans</h3>
+                </Link>
+</div>
+      <div class="col-md-3 px-2">
+                <Link href="#" class="curated-box" style={{
+              background: "url(assets/img/new-project.webp)",
+            }}>
+                    <h3 class="title">Luxury Realestate</h3>
+                </Link>
+</div>
+      <div class="col-md-3 px-2">
+                <Link href="#" class="curated-box" style={{
+              background: "url(assets/img/new-project.webp)",
+            }}>
+                    <h3 class="title">International Realestate</h3>
+                </Link>
+</div>
+      <div class="col-md-3 px-2">
+                <Link href="#" class="curated-box" style={{
+              background: "url(assets/img/new-project.webp)",
+            }}>
+                    <h3 class="title">Plots & Lands</h3>
+                </Link>
+</div>
+      </div>
+  </div>
+
+
+</section>
+          
+
+<section className="blog_main py-120">
+          <div className="container">
+          <div class="sec-heading text-center mb-4">
+      <h2>Latest News</h2>
+      <p>The Noteworthy Real Estate in India</p>
+   </div>
+        <div className="row">
+              <div className="col-md-6 col-lg-4">
+              <div className="blog-item">
+                <div className="blog-item-img">
+                <img src={"/assets/img/support-1.png"} />
+                </div>
+              <div className="blog-item-info">
+              <h4 className="blog-title">
+              <Link href="#">There are many variations of passages available suffer</Link>
+              </h4>
+              <div className="blog-item-meta">
+              <ul>
+              <li><Link href="#"><BiSolidUser /> By Mohan Reddy</Link></li>
+              <li><Link href="#"><MdDateRange />  May 12, 2025</Link></li>
+              </ul>
+              </div>
+              <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+              </p>
+              <Link className="theme-btn" href="/blog-single">Read More <AiOutlineArrowRight /></Link>
+              </div>
+              </div>
+              </div>
+              <div className="col-md-6 col-lg-4">
+              <div className="blog-item">
+                <div className="blog-item-img">
+                <img src={"/assets/img/support-1.png"} />
+                </div>
+              <div className="blog-item-info">
+              <h4 className="blog-title">
+              <Link href="#">There are many variations of passages available suffer</Link>
+              </h4>
+              <div className="blog-item-meta">
+              <ul>
+              <li><Link href="#"><BiSolidUser /> By Mohan Reddy</Link></li>
+              <li><Link href="#"><MdDateRange />  May 12, 2025</Link></li>
+              </ul>
+              </div>
+              <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+              </p>
+              <Link className="theme-btn" href="/blog-single">Read More <AiOutlineArrowRight /></Link>
+              </div>
+              </div>
+              </div>
+              <div className="col-md-6 col-lg-4">
+              <div className="blog-item">
+                <div className="blog-item-img">
+                <img src={"/assets/img/support-1.png"} />
+                </div>
+              <div className="blog-item-info">
+              <h4 className="blog-title">
+              <Link href="#">There are many variations of passages available suffer</Link>
+              </h4>
+              <div className="blog-item-meta">
+              <ul>
+              <li><Link href="#"><BiSolidUser /> By Mohan Reddy</Link></li>
+              <li><Link href="#"><MdDateRange />  May 12, 2025</Link></li>
+              </ul>
+              </div>
+              <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+              </p>
+              <Link className="theme-btn" href="/blog-single">Read More <AiOutlineArrowRight /></Link>
+              </div>
+              </div>
+              </div>
+      </div>
+      </div>
+
+      </section>
          
         </main>
       )}
