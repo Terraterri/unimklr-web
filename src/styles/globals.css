@@ -1481,3 +1481,52 @@ p {
   height: 440px;
   object-fit: fill;
 }
+
+.content_block_3 .content-box {
+  position: relative;
+  display: block;
+  margin-left: 20px;
+}
+
+.sec-title {
+  position: relative;
+  display: block;
+  margin-bottom: 17px;
+}
+
+.sec-title h2 {
+  display: block;
+  font-size: 30px;
+  line-height: 50px;
+  /* font-weight: 300; */
+  margin: 0px;
+}
+
+.content_block_3 .content-box .text {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.content_block_3 .content-box .text p {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.why-sec-title h2 {
+  font-size: 75px;
+}
+.why-sec-title h2 {
+  font-size: 75px;
+}
+.why-sec-title h2.why-1 {
+  text-align: center;
+}
+.why-sec-title h2.why-2 {
+  text-align: right;
+}
