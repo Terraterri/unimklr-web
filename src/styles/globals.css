@@ -1518,15 +1518,19 @@ p {
   clear: both;
   content: "";
 }
+
 .why-sec-title h2 {
   font-size: 75px;
 }
+
 .why-sec-title h2 {
   font-size: 75px;
 }
+
 .why-sec-title h2.why-1 {
   text-align: center;
 }
+
 .why-sec-title h2.why-2 {
   text-align: right;
 }

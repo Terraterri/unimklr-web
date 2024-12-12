@@ -1,6 +1,29 @@
 import React from 'react'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const BuddyService = () => {
+
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5,
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1,
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1,
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+        },
+    };
+
     return (
         <>
             <main className="main">
@@ -67,7 +90,7 @@ const BuddyService = () => {
                                     <h2 class="why-2">Buddy ?</h2>
                                 </div>
                                 <div class="line">
-                                    <img src="images/line.gif" alt />
+                                    <img src="assets/img/line.gif" alt />
                                 </div>
                             </div>
                             <div class="col-lg-7 col-md-12 col-sm-12">
@@ -118,6 +141,79 @@ const BuddyService = () => {
                         </div>
                     </div>
                 </section>
+
+
+                <section className="buddy-gallery sec-pad">
+                    <div className="auto-container">
+                        <Carousel
+                            responsive={responsive}
+                            infinite={true}
+                            autoPlay={true}
+                            autoPlaySpeed={3000}
+                            showDots={true}>
+                            <div className="buddy-images">
+                                <img src="assets/img/buddy-3.png" alt="Buddy 3" />
+                                <div className="content-3">
+                                    <h3>Deal Maestro</h3>
+                                    <h2>
+                                        My Goal is to Ensure a Seamless and Rewarding <br />
+                                        Experience in Securing the Perfect Real Estate Deal.
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <div className="buddy-images">
+                                <img src="assets/img/buddy-5.png" alt="Buddy 5" />
+                                <div className="content-5">
+                                    <h3>Save Your Time</h3>
+                                    <h2>
+                                        Searching For Properties With Me <br />
+                                        Saves You Valuable Time and Energy.
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <div className="buddy-images">
+                                <img src="assets/img/buddy-2.png" alt="Buddy 2" />
+                                <div className="content-2">
+                                    <div className="zoom-in-zoom-out">
+                                        <h4>Book</h4>
+                                        <h2>My Service</h2>
+                                    </div>
+                                    <h3>Get Started Now!</h3>
+                                </div>
+                            </div>
+
+                            <div className="buddy-images">
+                                <img src="assets/img/buddy-1.jpg" alt="Buddy 1" />
+                                <div className="content-1">
+                                    <h2 className="typing-demo">Hi! I'm your "Buddy"</h2>
+                                    <h3>
+                                        Your Dedicated Partner in Achieving <br />
+                                        Property Goals.
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div className="buddy-images">
+                                <img src="assets/img/buddy-4.png" alt="Buddy 4" />
+                                <div className="content-4">
+                                    <h3>Showcasing the Properties</h3>
+                                    <h2>
+                                        Experience your dream space in an immersive <br />
+                                        environment through cutting-edge technologies <br />
+                                        such as AR, VR, and the Metaverse.
+                                    </h2>
+                                </div>
+                            </div>
+                        </Carousel>
+
+                        <div className="buddy-contact-button">
+                            <button className="theme-btn btn-one">Contact</button>
+                        </div>
+                    </div>
+                </section>
+
             </main>
 
         </>
