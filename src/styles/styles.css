@@ -1911,14 +1911,15 @@ category css
 
 .category-item {
     text-align: center;
-    background: #fff;
+    background: transparent;
     margin-bottom: 0px;
-    border-radius: 15px;
+    border-radius: 0;
     /* box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%); */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: none !important;
     transition: all 0.5s ease-in-out;
-    padding: 30px 10px;
-    border-bottom: 5px solid #0078db75 !important;
+    padding: 3px 10px;
+    border-bottom: none !important;
+    border-right: 1px solid #b1b1b1;
 }
 
 .category-item h4 {
@@ -1956,7 +1957,7 @@ category css
 
 .category-titlee {
     font-size: 30px;
-    color: #0049d0b5 !important;
+    color: #fff !important;
     font-weight: 700;
     margin-bottom: 2px !important;
 }
@@ -1965,7 +1966,7 @@ category css
     margin: 0px 0 0px !important;
     margin-top: 0;
     font-size: 22px;
-    color: #000;
+    color: #fff;
     font-weight: 400;
 }
 
@@ -17207,14 +17208,14 @@ span.listing-price-title.by_titls span {
 
 .carsle_out img {
     width: 100% !important;
-    height: 655px !important;
+    height: 700px !important;
 }
 
 .slide_contnt {
-    margin-top: -378px;
+    margin-top: -460px;
     position: relative;
     z-index: 9;
-    padding-bottom: 95px;
+    padding-bottom: 0px;
 }
 
 
@@ -17523,6 +17524,8 @@ span.listing-price-title.by_titls span {
 .row.prop_out {
     position: relative;
     z-index: 11;
+    padding: 70px 89px 0px;
+    justify-content: center;
 }
 
 .category-titlee span {
@@ -17576,7 +17579,7 @@ span.listing-price-title.by_titls span {
 .curated-box .title {
     width: 100%;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     align-items: center;
     justify-content: center;
     transition: 0.3s;
@@ -17784,3 +17787,23 @@ span.listing-price-title.by_titls span {
         display: flex;
         margin: 30px 0;
     }
+.lon_txt-right {
+    border-bottom: 1px solid rgb(208, 205, 206) !important;
+    border-left: 1px solid rgb(208, 205, 206) !important;
+    padding-top: 50px;
+    padding-left: 35px;
+    height: 407px;
+}
+
+.lon_txt-left {
+    border-top: 1px solid rgb(208, 205, 206) !important;
+    border-right: 1px solid rgb(208, 205, 206) !important;
+    padding-top: 50px;
+    padding-right: 35px;
+    height: 407px;
+}
+
+
+.row.prop_out .col-lg-2{
+    width: 20% !important;
+}

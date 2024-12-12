@@ -579,7 +579,7 @@ export default function Home() {
                   data-wow-delay=".25s"
                 >
                   <div className="text-center">
-                  <h3 className="category-titlee">42<span>+</span></h3>
+                  <h3 className="category-titlee">30<span>+</span></h3>
                   <h4 className="category-title">Cities</h4>
                   </div>
                 </div>
@@ -591,7 +591,7 @@ export default function Home() {
                   data-wow-delay=".25s"
                 >
                   <div className="text-center">
-                  <h3 className="category-titlee">9<span>+</span></h3>
+                  <h3 className="category-titlee">2<span>+</span></h3>
                   <h4 className="category-title">Countries</h4>
                   </div>
                 </div>
@@ -603,7 +603,7 @@ export default function Home() {
                   data-wow-delay=".25s"
                 >
                   <div className="text-center">
-                  <h3 className="category-titlee">200<span>+</span></h3>
+                  <h3 className="category-titlee">150<span>+</span></h3>
                   <h4 className="category-title">Projects</h4>
                   </div>
                 </div>
@@ -615,7 +615,7 @@ export default function Home() {
                   data-wow-delay=".25s"
                 >
                   <div className="text-center">
-                  <h3 className="category-titlee">42<span>+</span></h3>
+                  <h3 className="category-titlee">40<span>+</span></h3>
                   <h4 className="category-title">Developers</h4>
                   </div>
                 </div>
@@ -627,24 +627,12 @@ export default function Home() {
                   data-wow-delay=".25s"
                 >
                   <div className="text-center">
-                  <h3 className="category-titlee">42<span>+</span></h3>
+                  <h3 className="category-titlee">1532<span>+</span></h3>
                   <h4 className="category-title">Customers</h4>
                   </div>
                 </div>
               </div>
-              <div className="col-6 col-md-4 col-lg-2 ">
-                <div
-                  className="category-item wow fadeInUp"
-                  data-wow-duration="1s"
-                  data-wow-delay=".25s"
-                >
-                  <div className="text-center">
-                  <h3 className="category-titlee">4200<span>Cr</span></h3>
-                  <h4 className="category-title">Property Sold</h4>
-                  </div>
-                </div>
-              </div>
-       
+           
             </div>
   </div>
 </section>
@@ -655,9 +643,9 @@ export default function Home() {
                 <div className="col-md-6">
                   <div className="desc_content_box">
                   <h3 className="mb-3">About Unimakler</h3>
-                  <p className="text-justify">UNIMAKLER REALTORS PRIVATE LIMITED is a professional Real Estate services company, providing a broad range of services in Real Estate consultancy, Project Marketing and Loans. Combining unmatched experience and specialized skills.</p>
+                  <p className="text-justify">UNIMAKLER is a professional Real Estate consulting company, that includes sales and leasing of Residential, commercial, Industrial, Agriculture, Housing loans and Interiors designing services.</p>
 
-                  <p className="text-justify">UNIMAKLER REALTORS PRIVATE LIMITED have successfully offered our services to major Real estate developers in Hyderabad to market a wide range of properties including apartments, flats in gated communities, villas, commercial properties such as office spaces, retail and showroom spaces etc.</p>
+                  <p className="text-justify">Unimakler provides bespoke exclusive project marketing services to property builders and developers by providing successful, reasonable and economical solutions that strategically position the project in the target Market.</p>
 
                   </div>
                 </div>
@@ -679,7 +667,7 @@ export default function Home() {
 <section className="pt-5 pb-5">
 <div class="sec-heading text-center">
       <h2>Elite Properties</h2>
-      <p>The Noteworthy Real Estate in India</p>
+      <p>Discover Elite Properties that align with your lifestyle.</p>
    </div>
   <div className="container">
   <Carousell
@@ -846,7 +834,7 @@ export default function Home() {
 <section className="pt-5 pb-5 gray-bg ">
 <div class="sec-heading text-center">
       <h2>Prime Properties</h2>
-      <p>The Noteworthy Real Estate in India</p>
+      <p>Discover Prime Properties that align with your lifestyle.</p>
    </div>
   <div className="container">
   <Carousell
@@ -1013,7 +1001,7 @@ export default function Home() {
 <div className="hme_lone_sec pb-5 pt-50">
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-md-6">
+                <div className="col-md-6 pr-3">
                   <div className="lon_img text-center">
                     <img
                       src={"/assets/img/tieup_img.png"}
@@ -1025,8 +1013,8 @@ export default function Home() {
                     /> */}
                   </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="lon_txt">
+                <div className="col-md-6 pl-3">
+                  <div className="lon_txt lon_txt-right">
                     <h3>Franchising Unimakler</h3>
                     <p> With 15+ years of sound Real Estate industry expertize. Unimakler offers new franchise model and inviting upcoming investors for strategic partnership to expand their foot print via Franchising.</p>
 <p>The vision of Unimakler is to achieve the Highest possible standards of Real Estate market while establishing the our franchises as the premier and preferred Real Estate consultants in India.
@@ -1047,7 +1035,7 @@ export default function Home() {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  <div className="lon_txt">
+                  <div className="lon_txt lon_txt-left">
                     <h3>You need a home loan, right? Get Pre-approval.</h3>
                     <p>
                       Get pre-approval from a lender with competitive Homeloan
@@ -1075,9 +1063,9 @@ export default function Home() {
 
 <section className="pt-5 pb-5 gray-bg ">
   <div className="container">
-      <div class="sec-heading text-center mb-3">
+      <div class="sec-heading text-center mb-4">
           <h2>Our Distinguished Services</h2>
-          <p>Explore prime properties based on your recommendation</p>
+          <p>Explore top-tier properties curated to match your needs.</p>
       </div>
 
       <div className="row">
@@ -1113,14 +1101,14 @@ export default function Home() {
                 <Link href="#" class="curated-box" style={{
               background: "url(assets/img/new-project.webp)",
             }}>
-                    <h3 class="title">Luxury Realestate</h3>
+                    <h3 class="title">Luxury<br></br>Realestate</h3>
                 </Link>
 </div>
       <div class="col-md-3 px-2">
                 <Link href="#" class="curated-box" style={{
               background: "url(assets/img/new-project.webp)",
             }}>
-                    <h3 class="title">International Realestate</h3>
+                    <h3 class="title">International<br></br>Realestate</h3>
                 </Link>
 </div>
       <div class="col-md-3 px-2">
