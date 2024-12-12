@@ -68,11 +68,11 @@ export default function Home() {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 4,
+      items: 3,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 767 },
@@ -87,11 +87,11 @@ export default function Home() {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 4,
+      items: 3,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 767 },
@@ -664,7 +664,7 @@ export default function Home() {
           </section>
 
 
-<section className="pt-5 pb-5">
+<section className="pt-5 pb-2 elite-prp">
 <div class="sec-heading text-center">
       <h2>Elite Properties</h2>
       <p>Discover Elite Properties that align with your lifestyle.</p>
@@ -688,13 +688,13 @@ export default function Home() {
             <div className="lower-content">
               <div className="title-text">
                 <h4>
-                  <a href="#">Vasavi Atlantis</a>
+                  <a href="#">THE WORLD OF JOY</a>
                 </h4>
               </div>
               <div className="price-box clearfix">
                 <div className="price-info pull-left">
-                  <h6> By: Vasavi Group </h6>
-                  <h4> ₹1.78 Lakhs onwards </h4>
+                  <h6> By: URBAN RISE </h6>
+                  <h4> ₹97 Lakhs onwards </h4>
                   <p> Under Construction </p>
                   <p> Possession By: 31-12-2025 </p>
                 </div>
@@ -718,13 +718,13 @@ export default function Home() {
             <div className="lower-content">
               <div className="title-text">
                 <h4>
-                  <a href="#">Vasavi Atlantis</a>
+                  <a href="#">SIGNATURE FORTIUS</a>
                 </h4>
               </div>
               <div className="price-box clearfix">
                 <div className="price-info pull-left">
-                  <h6> By: Vasavi Group </h6>
-                  <h4> ₹1.78 Lakhs onwards </h4>
+                  <h6> By: Signature Avenues</h6>
+                  <h4> ₹54 Lakhs onwards </h4>
                   <p> Under Construction </p>
                   <p> Possession By: 31-12-2025 </p>
                 </div>
@@ -748,13 +748,13 @@ export default function Home() {
             <div className="lower-content">
               <div className="title-text">
                 <h4>
-                  <a href="#">Vasavi Atlantis</a>
+                  <a href="#">VEDAMSA MAA SRINIVASAM</a>
                 </h4>
               </div>
               <div className="price-box clearfix">
                 <div className="price-info pull-left">
-                  <h6> By: Vasavi Group </h6>
-                  <h4> ₹1.78 Lakhs onwards </h4>
+                  <h6> By: Signature Avenues</h6>
+                  <h4> ₹58 Lakhs onwards </h4>
                   <p> Under Construction </p>
                   <p> Possession By: 31-12-2025 </p>
                 </div>
@@ -778,13 +778,13 @@ export default function Home() {
             <div className="lower-content">
               <div className="title-text">
                 <h4>
-                  <a href="#">Vasavi Atlantis</a>
+                  <a href="#">SRINIDHI IRIS</a>
                 </h4>
               </div>
               <div className="price-box clearfix">
                 <div className="price-info pull-left">
-                  <h6> By: Vasavi Group </h6>
-                  <h4> ₹1.78 Lakhs onwards </h4>
+                  <h6> By: Srinidhi Projects</h6>
+                  <h4> ₹66 Lakhs onwards </h4>
                   <p> Under Construction </p>
                   <p> Possession By: 31-12-2025 </p>
                 </div>
@@ -808,13 +808,13 @@ export default function Home() {
             <div className="lower-content">
               <div className="title-text">
                 <h4>
-                  <a href="#">Vasavi Atlantis</a>
+                  <a href="#">LOYAL RESIDENCY</a>
                 </h4>
               </div>
               <div className="price-box clearfix">
                 <div className="price-info pull-left">
-                  <h6> By: Vasavi Group </h6>
-                  <h4> ₹1.78 Lakhs onwards </h4>
+                  <h6> By: Loyal Residency</h6>
+                  <h4> ₹64 Lakhs onwards </h4>
                   <p> Under Construction </p>
                   <p> Possession By: 31-12-2025 </p>
                 </div>
@@ -826,12 +826,72 @@ export default function Home() {
           </div>
         </div>
       </div>
-               
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">Shivantha Gardenia</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: Shivantha Gardenia</h6>
+                  <h4> ₹38 Lakhs onwards </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By: 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 feature-block">
+        <div data-wow-delay="300ms" data-wow-duration="1500ms" className="feature-block-one wow fadeInUp animated">
+          <div className="inner-box">
+            <div className="image-box">
+              <figure className="image">
+                <img src="/assets/img/property/01.jpg" alt />
+              </figure>
+
+            </div>
+            <div className="lower-content">
+              <div className="title-text">
+                <h4>
+                  <a href="#">YUVA ROCK HILLS</a>
+                </h4>
+              </div>
+              <div className="price-box clearfix">
+                <div className="price-info pull-left">
+                  <h6> By: YUVA ROCK HILLS</h6>
+                  <h4> ₹8 Lakhs onwards </h4>
+                  <p> Under Construction </p>
+                  <p> Possession By: 31-12-2025 </p>
+                </div>
+              </div>
+              <div className="btn-box">
+                <a href="#" className="btn-lht">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
               </Carousell>
   </div>
 </section>
 
-<section className="pt-5 pb-5 gray-bg ">
+<section className="pt-4 pb-3 gray-bg ">
 <div class="sec-heading text-center">
       <h2>Prime Properties</h2>
       <p>Discover Prime Properties that align with your lifestyle.</p>
@@ -1061,7 +1121,7 @@ export default function Home() {
           </div>
 </section>
 
-<section className="pt-5 pb-5 gray-bg ">
+<section className="pt-4 pb-3 gray-bg ">
   <div className="container">
       <div class="sec-heading text-center mb-4">
           <h2>Our Distinguished Services</h2>
@@ -1125,6 +1185,56 @@ export default function Home() {
 </section>
           
 
+<section className="blog_main py-120">
+          <div className="container">
+          <div class="sec-heading text-center mb-4">
+              <h2>Featured Cities</h2>
+              <p>The Noteworthy Real Estate in India</p>
+          </div>
+       
+        <div className="container">
+  <Carousell
+                responsive={primeProperties}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={3000}
+              >
+<div className="col-md-12 px-3">
+<div className="item">
+ <img src={"/assets/img/hyderabad.jpg"} />
+
+ </div>
+</div>
+<div className="col-md-12 px-3">
+<div className="item">
+ <img src={"/assets/img/bengaluru.jpg"} />
+
+ </div>
+</div>
+<div className="col-md-12 px-3">
+<div className="item">
+ <img src={"/assets/img/chennai.jpg"} />
+
+ </div>
+</div>
+<div className="col-md-12 px-3">
+<div className="item">
+ <img src={"/assets/img/kolkata.jpg"} />
+
+ </div>
+</div>
+<div className="col-md-12 px-3">
+<div className="item">
+ <img src={"/assets/img/dubai-BK.jpg"} />
+
+ </div>
+</div>
+
+              </Carousell>
+  </div>
+      </div>
+
+</section>
 <section className="blog_main py-120">
           <div className="container">
           <div class="sec-heading text-center mb-4">
@@ -1201,8 +1311,9 @@ export default function Home() {
       </div>
       </div>
 
-      </section>
+</section>
          
+
         </main>
       )}
     </>

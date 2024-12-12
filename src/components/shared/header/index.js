@@ -16,6 +16,24 @@ export default function Home() {
   const [show, setShow] = useState(false);
   const router = useRouter();
 
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+
+  };
+
+
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", changeBackground);
+
+
+  }
   useEffect(() => {
     setIsOpen(false);
   }, []);
@@ -44,7 +62,13 @@ export default function Home() {
           href="assets/img/logo/terraterri-favicon.png"
         ></link>
       </Head>
-      <header className="header">
+
+
+
+      <section className={navbar ? "header-part active" : "header-part"} >
+
+      <header className="header header_otr">
+     
         <div className="main-navigation">
           <nav className="navbar navbar-expand-lg">
             <div className="container" style={{ maxHeight: "80px" }}>
@@ -151,7 +175,7 @@ export default function Home() {
                       href="franchise"
                       
                     >
-                      Partner with us
+                      Own a Franchise
                     </Link>
                     {/* <ul className="dropdown-menu fade-down">
                       <li>
@@ -202,7 +226,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-
+        </section>
       <Offcanvas show={show} onHide={() => setShow(false)}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Sign in to get a personalised feed!</Offcanvas.Title>
