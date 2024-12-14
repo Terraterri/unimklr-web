@@ -462,7 +462,7 @@ export default function Home() {
                         <form action="#">
                           
                           <div className="row align-items-center mt-0 input-height">
-                            <div className="col-lg-4">
+                            <div className="col-lg-3">
                               <div
                                 className="form-group city-icon"
                                 onClick={() => {
@@ -1188,7 +1188,7 @@ export default function Home() {
 <section className="blog_main py-120">
           <div className="container">
           <div class="sec-heading text-center mb-4">
-              <h2>Featured Cities</h2>
+              <h2>Cities Where Our Presence Is...</h2>
               <p>The Noteworthy Real Estate in India</p>
           </div>
        
