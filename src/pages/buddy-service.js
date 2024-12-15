@@ -136,7 +136,7 @@ const BuddyService = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div className='col-md-5'>
                                                 <div className='row align-items-center'>
                                                     <div className='col-md-6'>
