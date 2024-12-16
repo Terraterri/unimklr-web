@@ -9,6 +9,7 @@ import "@/styles/jquery-ui.min.css";
 import "@/components/loader/loader.css";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "@/styles/styles.css";
+import "@/styles/responcive.css"
 // import "@/styles/owl.carousel.min.css";
 import { Suspense, createContext, useEffect, useState } from "react";
 import Header from "../components/shared/header";

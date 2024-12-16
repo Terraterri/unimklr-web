@@ -30,7 +30,6 @@ const Franchise = () => {
   const [otpPopup, setOtpPopup] = useState(false);
   const [generatedOtp, setGeneratedOtp] = useState("");
   const [otp, setOtp] = useState("");
-
   const [isPopupOpen, setPopupOpen] = useState(null);
   const [isPopupOpenTwo, setPopupOpenTwo] = useState(null);
 
@@ -89,13 +88,20 @@ const Franchise = () => {
         const response = await axios.get("https://restcountries.com/v3.1/all");
         const countryData = response.data.map((country) => ({
           name: country.name.common,
-          code: country.idd.root
-            ? `${country.idd.root}${country.idd.suffixes ? country.idd.suffixes[0] : ""}`
+          code: country.idd?.root
+            ? `${country.idd.root}${country.idd.suffixes?.[0] || ""}`
             : "",
         }));
         setCountries(countryData);
       } catch (error) {
-        console.error("Error fetching countries:", error);
+        console.error("Error fetching countries:", error.message);
+        if (error.request) {
+          console.error("No response was received:", error.request);
+        } else if (error.response) {
+          console.error("Error response:", error.response);
+        } else {
+          console.error("Error setting up the request:", error.config);
+        }
         toast.error("Failed to load country data.");
       }
     };
@@ -171,33 +177,7 @@ const Franchise = () => {
   };
 
 
-  const InputField = ({ icon, ...props }) => (
-    <div className="form-group">
-      {icon}
-      <input {...props} />
-    </div>
-  );
 
-  const SelectField = ({ icon, options, ...props }) => (
-    <div className="form-group">
-      {icon}
-      <select {...props}>
-        <option value="">{props.placeholder}</option>
-        {options.map((opt, idx) => (
-          <option key={idx} value={opt.name}>
-            {opt.name}
-          </option>
-        ))}
-      </select>
-    </div>
-  );
-
-  const TextareaField = ({ icon, ...props }) => (
-    <div className="form-group">
-      {icon}
-      <textarea {...props}></textarea>
-    </div>
-  );
 
   return (
     <>
@@ -311,7 +291,7 @@ const Franchise = () => {
               <div className="col-md-6">
                 <ol className="ol-cards">
                   <li onClick={() => showPopTwo("IntFranchise")}
-                     className={` ${isPopupOpenTwo === "IntFranchise" ? "active" : ""}`}>
+                    className={` ${isPopupOpenTwo === "IntFranchise" ? "active" : ""}`}>
                     <div className="icon bg-orng">
                       <AiOutlineDropbox />
                     </div>
@@ -319,7 +299,7 @@ const Franchise = () => {
                     <span>View</span>
                   </li>
                   <li onClick={() => showPopTwo("HouFranchise")}
-                     className={` ${isPopupOpenTwo === "HouFranchise" ? "active" : ""}`}>
+                    className={` ${isPopupOpenTwo === "HouFranchise" ? "active" : ""}`}>
                     <div className="icon bg-bluer">
                       <FaHandHoldingDollar />
                     </div>
@@ -327,7 +307,7 @@ const Franchise = () => {
                     <span>View</span>
                   </li>
                   <li onClick={() => showPopTwo("IntREFranchise")}
-                     className={` ${isPopupOpenTwo === "IntREFranchise" ? "active" : ""}`}>
+                    className={` ${isPopupOpenTwo === "IntREFranchise" ? "active" : ""}`}>
                     <div className="icon bg-orng">
                       <BsHouseUpFill />
                     </div>
@@ -335,7 +315,7 @@ const Franchise = () => {
                     <span>View</span>
                   </li>
                   <li onClick={() => showPopTwo("MultiLandFranchise")}
-                     className={` ${isPopupOpenTwo === "MultiLandFranchise" ? "active" : ""}`}>
+                    className={` ${isPopupOpenTwo === "MultiLandFranchise" ? "active" : ""}`}>
                     <div className="icon bg-bluer">
                       <FaHouseFlag />
                     </div>
@@ -399,243 +379,10 @@ const Franchise = () => {
 
 
 
-        {/* <div id="services" className="core-service-area with-black-bg pt-100 pb-70">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="main-section-title">
-                <span className="text-white">
-                  <h3>Our Core Services</h3>
-                </span>
-              </div>
-              <div className="col-md-3 col-sm-4 col-xs-6">
-
-                <div className="card mt-3">
-                  <div className="card-body flip">
-                    <div className="front">
-                      <img src="styles/img/service-1.png" className="service-icon" alt="image" />
-                      <h5 className="card-title">Residential <br /> Real Estate </h5>
-                    </div>
-                    <div className="back">
-                      <h6 className="card-title">Residential Real Estate </h6>
-                      <p>Facilitating the buying, selling, or renting of homes, apartments, and other residential properties
-                        and providing professional guidance and expertise to clients throughout the entire transaction.</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div className="col-md-3 col-sm-4 col-xs-6">
-
-
-                <div className="card mt-3">
-                  <div className="card-body flip">
-                    <div className="front">
-                      <img src="styles/img/service-2.png" className="service-icon" alt="image" />
-                      <h5 className="card-title">Commercial <br /> Real Estate</h5>
-                    </div>
-                    <div className="back">
-                      <h6 className="card-title">Commercial Real Estate</h6>
-                      <p>Unimakler’s Commercial real estate involves providing professional services related to the buying,
-                        selling, leasing, and management of commercial properties. which includes various property types such
-                        as office buildings, retail spaces, industrial facilities, warehouses, and more.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-sm-4 col-xs-6">
-                <div className="card mt-3">
-                  <div className="card-body flip">
-                    <div className="front">
-                      <img src="styles/img/service-3.png" className="service-icon" alt="image" />
-                      <h5 className="card-title">Industrial <br /> Real Estate</h5>
-                    </div>
-                    <div className="back">
-                      <h6 className="card-title">Industrial Real Estate</h6>
-                      <p>Unimakler’s Industrial real estate involves providing specialized services related to the buying,
-                        selling, leasing, and management of industrial properties. Which include warehouses, distribution
-                        centers, manufacturing facilities, logistics hubs, and other types of properties designed for
-                        industrial activities.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-3 col-sm-4 col-xs-6">
-
-                <div className="card mt-3">
-                  <div className="card-body flip">
-                    <div className="front">
-                      <img src="styles/img/service-5.png" className="service-icon" alt="image" />
-                      <h5 className="card-title">Luxury <br /> Real Estate</h5>
-                    </div>
-                    <div className="back">
-                      <h6 className="card-title">Luxury Real Estate</h6>
-                      <p>Unimakler’s Luxury real estate INVOLVES high-end properties With exceptional quality, unique
-                        features, and a premium level of craftsmanship, design, and amenities.</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div className="col-md-3 col-sm-4 col-xs-6">
 
 
 
-                <div className="card mt-3">
-                  <div className="card-body flip">
-                    <div className="front">
-                      <img src="styles/img/service-6.png" className="service-icon" alt="image&quot;" />
-                      <h5 className="card-title">Housings <br /> Loans</h5>
-                    </div>
-                    <div className="back">
-                      <h6 className="card-title">Housings Loans</h6>
-                      <p>Unimakler facilitates the process of obtaining a housing loan for individuals looking to purchase or
-                        refinance a home. Unimakler act as intermediaries between borrowers and lenders, helping clients
-                        navigate the complexities of the loan application and approval process. </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-sm-4 col-xs-6">
 
-                <div className="card mt-3">
-                  <div className="card-body flip">
-                    <div className="front">
-                      <img src="styles/img/service-7.png" className="service-icon" alt="image" />
-                      <h5 className="card-title">Interiors <br /> Designing</h5>
-                    </div>
-                    <div className="back">
-                      <h6 className="card-title">Interiors Designing</h6>
-                      <p>professional planning, coordination, and execution of interior spaces to enhance the overall
-                        aesthetic appeal, functionality, and comfort. Whether for residential or commercial spaces, interior
-                        designers bring creativity and expertise to create well-designed and harmonious interiors.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-sm-4 col-xs-6">
-
-
-
-                <div className="card mt-3">
-                  <div className="card-body flip">
-                    <div className="front">
-                      <img src="styles/img/service-8.png" className="service-icon" alt="image" />
-                      <h5 className="card-title">Real Estate <br /> Investments</h5>
-                    </div>
-                    <div className="back">
-                      <h6 className="card-title">Real Estate Investments</h6>
-                      <p>Unimakler deals in buying, selling, of real estate internationally. It involves transactions and
-                        investments in real estate assets that are located in different countries.</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div className="col-md-3 col-sm-4 col-xs-6">
-
-
-
-                <div className="card mt-3">
-                  <div className="card-body flip">
-                    <div className="front">
-                      <img src="styles/img/service-9.png" className="service-icon" alt="image" />
-                      <h5 className="card-title">International <br /> Real Estate</h5>
-                    </div>
-                    <div className="back">
-                      <h6 className="card-title">International Real Estate</h6>
-                      <p>Unimakler helps Real estate investors in acquiring, owning, and managing properties to generate
-                        income through rental payments or capital appreciation.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-
-        {/* <div id="services" className=" with-black-bg pt-100 pb-70">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="main-section-title">
-                <span className="text">
-                  <h3>Our Core Services</h3>
-                </span>
-              </div>
-              <div className="row">
-                <div className="col-md-3">
-                  <div className="cccc-blue">
-                    <h2>Residential Real Estate
-                    </h2>
-                    <p>Facilitating the buying, selling, or renting of homes, apartments, and other residential properties and providing professional guidance and expertise to clients throughout the entire transaction.</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc-ornge">
-                    <h2>Commercial Real Estate
-                    </h2>
-                    <p>Unimakler’s Commercial real estate involves providing professional services related to the buying, selling, leasing, and management of commercial properties. which includes various property types such as office buildings, retail spaces, industrial facilities, warehouses, and more.</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc-blue">
-                    <h2>Industrial Real Estate
-                    </h2>
-                    <p>Unimakler’s Industrial real estate involves providing specialized services related to the buying, selling, leasing, and management of industrial properties. Which include warehouses, distribution centers, manufacturing facilities, logistics hubs, and other types of properties designed for industrial activities.</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc-ornge">
-                    <h2>Luxury Real Estate
-                    </h2>
-                    <p>Unimakler’s Luxury real estate INVOLVES high-end properties With exceptional quality, unique features, and a premium level of craftsmanship, design, and amenities.</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc-blue">
-                    <h2>Housings Loans
-
-                    </h2>
-                    <p>Unimakler facilitates the process of obtaining a housing loan for individuals looking to purchase or refinance a home. Unimakler act as intermediaries between borrowers and lenders, helping clients navigate the complexities of the loan application and approval process.
-
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc-ornge">
-                    <h2>Interiors Designing
-
-                    </h2>
-                    <p>professional planning, coordination, and execution of interior spaces to enhance the overall aesthetic appeal, functionality, and comfort. Whether for residential or commercial spaces, interior designers bring creativity and expertise to create well-designed and harmonious interiors.
-
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc-blue">
-                    <h2>Real Estate Investments
-                    </h2>
-                    <p>Unimakler deals in buying, selling, of real estate internationally. It involves transactions and investments in real estate assets that are located in different countries.
-
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc-ornge">
-                    <h2>International Real Estate
-
-                    </h2>
-                    <p>Unimakler helps Real estate investors in acquiring, owning, and managing properties to generate income through rental payments or capital appreciation.
-
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div> */}
 
         <div className="location-area pb-20 category-area1">
           <div className="container">
@@ -645,7 +392,7 @@ const Franchise = () => {
                 Our Core Services
               </h2>
             </div>
-            <div className="row">
+            <div className="row text-center">
               <div className="col-md-4 mb-4 text-center">
                 <a>
                   <div className="cardBoxx">
@@ -1714,7 +1461,7 @@ const Franchise = () => {
                 placeholder="X X X X X X"
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
-              />
+              /> <br />
               <button className="theme-btn btn-one" onClick={handleVerifyOtp}>Verify OTP</button>
             </div>
           </div>
@@ -1725,3 +1472,31 @@ const Franchise = () => {
 };
 
 export default Franchise;
+
+const InputField = ({ icon, ...props }) => (
+  <div className="form-group">
+    {icon}
+    <input {...props} />
+  </div>
+);
+
+const SelectField = ({ icon, options, ...props }) => (
+  <div className="form-group">
+    {icon}
+    <select {...props}>
+      <option value="">{props.placeholder}</option>
+      {options.map((opt, idx) => (
+        <option key={idx} value={opt.name}>
+          {opt.name}
+        </option>
+      ))}
+    </select>
+  </div>
+);
+
+const TextareaField = ({ icon, ...props }) => (
+  <div className="form-group">
+    {icon}
+    <textarea {...props}></textarea>
+  </div>
+);

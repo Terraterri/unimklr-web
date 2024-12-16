@@ -171,7 +171,7 @@ export default function Home() {
                   </li> */}
                   <li className="nav-item">
                     <Link
-                      className="nav-link dropdown-toggle"
+                      className="nav-link "
                       href="franchise"
                       
                     >

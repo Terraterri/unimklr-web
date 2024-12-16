@@ -13880,10 +13880,6 @@ button.lists_out {
     color: #fff;
 }
 
-.cardBoxx {
-    width: 100%;
-    height: 400px;
-}
 
 .cardBoxx h2 {
     font-size: 30px;
@@ -15745,7 +15741,7 @@ body .map-box .listing-img img {
     }
 
     .cardBoxx {
-        height: 300px !important;
+        height: 300px ;
         margin-bottom: 15px !important;
     }
 
