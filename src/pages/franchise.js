@@ -209,7 +209,7 @@ const Franchise = () => {
         <div className="video-overview-area ptb-100">
           <div className="container">
             <div className="franchise">
-              <div className="row align-items-center">
+              <div className="row align-items-center justify-content-center">
                 <div className="col-lg-6 col-md-6 col-sm-10 col-xs-12">
                   <div className="fran-image">
                     <img src="assets/img/carousel3.jpg" alt="image" />
@@ -244,7 +244,7 @@ const Franchise = () => {
               </span>
             </div>
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-6 mrsty">
                 <ol className="ol-cards">
                   <li
                     onClick={() => showPop("RFranchise")}
@@ -393,7 +393,7 @@ const Franchise = () => {
               </h2>
             </div>
             <div className="row text-center">
-              <div className="col-md-4 mb-4 text-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
                 <a>
                   <div className="cardBoxx">
                     <div className="cardtxt text-center">
@@ -424,7 +424,7 @@ const Franchise = () => {
                 </a>
               </div>
 
-              <div className="col-md-4 mb-4 text-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
                 <a >
                   <div className="cardBoxx">
                     <div className="cardtxt text-center">
@@ -455,7 +455,7 @@ const Franchise = () => {
                 </a>
               </div>
 
-              <div className="col-md-4 mb-4 text-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
                 <a >
                   <div className="cardBoxx">
                     <div className="cardtxt text-center">
@@ -489,7 +489,7 @@ const Franchise = () => {
                 </a>
               </div>
 
-              <div className="col-md-4 mb-4 text-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
                 <a>
                   <div className="cardBoxx">
                     <div className="cardtxt text-center">
@@ -524,7 +524,7 @@ const Franchise = () => {
                 </a>
               </div>
 
-              <div className="col-md-4 text-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
                 <a >
                   <div className="cardBoxx">
                     <div className="cardtxt text-center">
@@ -559,7 +559,7 @@ const Franchise = () => {
                   </div>
                 </a>
               </div>
-              <div className="col-md-4 text-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
                 <a >
                   <div className="cardBoxx">
                     <div className="cardtxt text-center">
@@ -597,7 +597,7 @@ const Franchise = () => {
                   </div>
                 </a>
               </div>
-              <div className="col-md-4 text-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
                 <a >
                   <div className="cardBoxx">
                     <div className="cardtxt text-center">
@@ -631,7 +631,7 @@ const Franchise = () => {
                   </div>
                 </a>
               </div>
-              <div className="col-md-4">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <a >
                   <div className="cardBoxx">
                     <div className="cardtxt text-center">
@@ -669,7 +669,7 @@ const Franchise = () => {
                 </a>
               </div>
 
-              <div className="col-md-4">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <a >
                   <div className="cardBoxx">
                     <div className="cardtxt text-center">
@@ -824,7 +824,7 @@ const Franchise = () => {
                 </div>
               </div>
               <div className="col-md-12 col-sm-12 col-xs-12">
-                <div className="row">
+                <div className="row flex-d-clm-re">
 
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div className="digital">
@@ -858,7 +858,7 @@ const Franchise = () => {
                 </div>
               </div>
               <div className="col-md-12 col-sm-12 col-xs-12">
-                <div className="row">
+                <div className="row flex-d-clm-re">
 
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div className="digital">
@@ -887,8 +887,8 @@ const Franchise = () => {
                 <h3>Our Support to Franchise</h3>
               </span>
             </div>
-            <div className="row">
-              <div className="col-md-4 col-sm-6 col-xs-12">
+            <div className="row justify-content-center">
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
                 {/* <div className="card realestate">
                   <div className="card_image">
@@ -919,7 +919,7 @@ const Franchise = () => {
                   </figure>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-6 col-xs-12">
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
                 <div class="card">
                   <figure class="card__thumb">
@@ -952,7 +952,7 @@ const Franchise = () => {
                 </div> */}
 
               </div>
-              <div className="col-md-4 col-sm-6 col-xs-12">
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
                 <div class="card">
                   <figure class="card__thumb">
@@ -984,7 +984,7 @@ const Franchise = () => {
                   </div>
                 </div> */}
               </div>
-              <div className="col-md-4 col-sm-6 col-xs-12">
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
                 <div class="card">
                   <figure class="card__thumb">
@@ -1016,7 +1016,7 @@ const Franchise = () => {
                   </div>
                 </div> */}
               </div>
-              <div className="col-md-4 col-sm-6 col-xs-12">
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
                 <div class="card">
                   <figure class="card__thumb">
@@ -1048,7 +1048,7 @@ const Franchise = () => {
                   </div>
                 </div> */}
               </div>
-              <div className="col-md-4 col-sm-6 col-xs-12">
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
                 <div class="card">
                   <figure class="card__thumb">
@@ -1066,7 +1066,7 @@ const Franchise = () => {
                 </div>
               </div>
 
-              <div className="col-md-4 col-sm-6 col-xs-12">
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/micropic.jpg" className="image" />
@@ -1082,7 +1082,7 @@ const Franchise = () => {
                   </figure>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-6 col-xs-12">
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/bisunness.jpg" className="image" />
@@ -1098,7 +1098,7 @@ const Franchise = () => {
                   </figure>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-6 col-xs-12">
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/supot.jpg" className="image" />
@@ -1195,17 +1195,17 @@ const Franchise = () => {
             <span className="test text-center pb-5">
               <h3>Key Benefits to franchise</h3>
             </span>
-            <div className="row mt-5">
-              <div className="col-lg-7 col-md-10 col-sm-12">
+            <div className="row mt-5 flex-d-clm-re">
+              <div className="col-lg-7 col-md-12 col-sm-12">
                 <div class="row">
                   <div class="col-md-offset-2 step1">
                     <div class="row box shape-1 animated bounceInLeft">
-                      <div class="col-xs-7 col-sm-4 col-md-4 shape">
+                      <div class="col-xs-7 col-md-4 shape">
                         <div class="number">
                           <AiOutlineCluster />
                         </div>
                       </div>
-                      <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-8 col-md-offset-1">
+                      <div class=" col-xs-offset-1  col-sm-offset-1 col-md-8 col-md-offset-1">
                         <p>Multiple Revenue Streams</p>
                       </div>
 
@@ -1213,12 +1213,12 @@ const Franchise = () => {
                   </div>
                   <div class="col-md-offset-2 step2">
                     <div class="row box shape-2 animated bounceInRight">
-                      <div class="col-xs-7 col-sm-4 col-md-4 shape">
+                      <div class="col-xs-7  col-md-4 shape">
                         <div class="number">
                           <FaCity />
                         </div>
                       </div>
-                      <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-8 col-md-offset-1">
+                      <div class="col-xs-5 col-xs-offset-1 col-sm-offset-1 col-md-8 col-md-offset-1">
                         <p>Pan India Community</p>
                       </div>
 
@@ -1226,12 +1226,12 @@ const Franchise = () => {
                   </div>
                   <div class="col-md-offset-2 step3">
                     <div class="row box shape-3 animated bounceInLeft">
-                      <div class="col-xs-7 col-sm-4 col-md-4 shape">
+                      <div class="col-xs-7  col-md-4 shape">
                         <div class="number">
                           <FaShareNodes />
                         </div>
                       </div>
-                      <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-8 col-md-offset-1">
+                      <div class="col-xs-5 col-xs-offset-1 col-sm-offset-1 col-md-8 col-md-offset-1">
                         <p>Wide range real estate options
                         </p>
                       </div>
@@ -1240,25 +1240,25 @@ const Franchise = () => {
                   </div>
                   <div class="col-md-offset-2 step4">
                     <div class="row box shape-4 animated bounceInRight">
-                      <div class="col-xs-7 col-sm-4 col-md-4 shape">
+                      <div class="col-xs-7  col-md-4 shape">
                         <div class="number">
                           <IoSettings />
 
                         </div>
                       </div>
-                      <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-8 col-md-offset-1">
+                      <div class="col-xs-5 col-xs-offset-1 col-sm-offset-1 col-md-8 col-md-offset-1">
                         <p>Meta listings</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-offset-2 step4">
                     <div class="row box shape-1 animated bounceInLeft">
-                      <div class="col-xs-7 col-sm-4 col-md-4 shape">
+                      <div class="col-xs-7 col-md-4 shape">
                         <div class="number">
                           <MdAssuredWorkload />
                         </div>
                       </div>
-                      <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-8 col-md-offset-1">
+                      <div class="col-xs-5 col-xs-offset-1 col-sm-offset-1 col-md-8 col-md-offset-1">
                         <p>Lead sharing options
                         </p>
                       </div>
@@ -1267,13 +1267,13 @@ const Franchise = () => {
                   </div>
                   <div class="col-md-offset-2 step4">
                     <div class="row box shape-2 animated bounceInRight">
-                      <div class="col-xs-7 col-sm-4 col-md-4 shape">
+                      <div class="col-xs-7 col-md-4 shape">
                         <div class="number">
                           <MdAddHomeWork />
 
                         </div>
                       </div>
-                      <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-8 col-md-offset-1">
+                      <div class="col-xs-5 col-xs-offset-1 col-sm-offset-1 col-md-8 col-md-offset-1">
                         <p>Best in industry revenue sharing</p>
                       </div>
 
@@ -1282,7 +1282,7 @@ const Franchise = () => {
 
                 </div>
               </div>
-              <div className="col-lg-5 col-md-10 col-sm-10">
+              <div className="col-lg-5 col-md-12 col-sm-12">
                 <div className="get-introduced-image">
                   <img src="assets/img/about-intro-bk.jpg" alt="image" />
                 </div>

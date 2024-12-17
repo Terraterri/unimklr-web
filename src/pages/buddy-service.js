@@ -71,7 +71,7 @@ const BuddyService = () => {
 
                 <section class="about-buddy sec-pad">
                     <div class="auto-container">
-                        <div class="row align-items-center clearfix">
+                        <div class="row align-items-center clearfix justify-content-center">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="image_block_2">
                                     <div class="image-box about-b1">
@@ -115,22 +115,22 @@ const BuddyService = () => {
                                         <div class="row align-items-center clearfix justify-content-center">
                                             <div className='col-md-7'>
                                                 <div className='row align-items-center'>
-                                                    <div className='col-md-4'>
-                                                        <div class="abcd-box orange-bg">
+                                                    <div className='col-md-4 '>
+                                                        <div class="abcd-box orange-bg wi-50">
                                                             <h5> CLIENT-CENTRIC APPROACH </h5>
                                                         </div>
                                                     </div>
-                                                    <div className='col-md-4'>
-                                                        <div class="abcd-box blue-bg onee mb-2">
+                                                    <div className='col-md-4 ' >
+                                                        <div class="abcd-box blue-bg onee mb-2 wi-50">
                                                             <h5> PROFESSIONAL SERVICE </h5>
                                                         </div>
-                                                        <div class="abcd-box blue-bg twoo">
+                                                        <div class="abcd-box blue-bg twoo wi-50">
                                                             <h5> DEDICATED <br /> SERVICE </h5>
 
                                                         </div>
                                                     </div>
-                                                    <div className='col-md-4'>
-                                                        <div class="abcd-box orange-bg">
+                                                    <div className='col-md-4 '>
+                                                        <div class="abcd-box orange-bg wi-50">
                                                             <h5> CLIENT-CENTRIC APPROACH </h5>
                                                         </div>
                                                     </div>
@@ -140,17 +140,17 @@ const BuddyService = () => {
                                             <div className='col-md-5'>
                                                 <div className='row align-items-center'>
                                                     <div className='col-md-6'>
-                                                        <div class="abcd-box orange-bg twoo">
+                                                        <div class="abcd-box orange-bg twoo wi-50">
                                                             <h5> DOMAIN <br /> EXPERT </h5>
 
                                                         </div>
-                                                        <div class="abcd-box orange-bg mt-2">
+                                                        <div class="abcd-box orange-bg mt-2 wi-50">
                                                             <h5> SAVES TIME AND EFFORTS </h5>
                                                         </div>
 
                                                     </div>
-                                                    <div className='col-md-6'>
-                                                        <div class="abcd-box blue-bg">
+                                                    <div className='col-md-6 wi-50'>
+                                                        <div class="abcd-box blue-bg wi-50">
                                                             <h5> MARKET <br /> KNOWLEDGE </h5>
                                                         </div>
                                                     </div>
