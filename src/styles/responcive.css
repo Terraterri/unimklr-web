@@ -45,7 +45,9 @@
 
     .card__caption {
         margin-top: 0;
+    
     }
+  
 
     .card__title {
         font-size: 15px;
@@ -114,6 +116,10 @@
         margin-right: 10px !important;
         font-size: 15px;
     }
+    .card__caption {
+        position: absolute;
+        top: 130%;
+    }
 }
 
 
@@ -174,6 +180,10 @@
 
     .content-5 h3 {
         font-size: 30px;
+    }
+    .card__caption {
+        position: absolute;
+        top: 120%;
     }
 
 }
@@ -257,6 +267,10 @@
     .wi-50 {
         margin: 10px auto;
 
+    }
+    .card__caption {
+        position: absolute;
+        top: 125%;
     }
 
 }
@@ -397,6 +411,10 @@
         left: 60px;
         top: 110px;
     }
+    .card__caption {
+        position: absolute;
+        top: 116%;
+    }
 
 }
 
@@ -457,6 +475,10 @@
     }
     .content-1{
         display: none;
+    }
+    .card__caption {
+        position: absolute;
+        top: 122%;
     }
 
 }
