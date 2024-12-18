@@ -67,21 +67,21 @@ export default function Home() {
 
       <section className={navbar ? "header-part active" : "header-part"} >
 
-      <header className="header header_otr">
-     
-        <div className="main-navigation">
-          <nav className="navbar navbar-expand-lg">
-            <div className="container" style={{ maxHeight: "80px" }}>
-              <Link className="navbar-brand" href="/">
-                <Image
-                  width={150}
-                  height={50}
-                  src={"/assets/img/logo/unimakler-final.png"}
-                  alt="logo"
-                />
-              </Link>
-              <div className="mobile-menu-right">
-                {/* <button
+        <header className="header header_otr">
+
+          <div className="main-navigation">
+            <nav className="navbar navbar-expand-lg">
+              <div className="container" style={{ maxHeight: "80px" }}>
+                <Link className="navbar-brand" href="/">
+                  <Image
+                    width={150}
+                    height={50}
+                    src={"/assets/img/logo/unimakler-final.png"}
+                    alt="logo"
+                  />
+                </Link>
+                <div className="mobile-menu-right">
+                  {/* <button
                   className="navbar-toggler"
                   type="button"
                   data-bs-toggle="collapse"
@@ -93,47 +93,47 @@ export default function Home() {
                     <i className="far fa-bars" />
                   </span>
                 </button> */}
-              </div>
-              <div className="collapse navbar-collapse" id="main_nav">
-                <ul className="navbar-nav">
-                  {/* <li className="nav-item">
+                </div>
+                <div className="collapse navbar-collapse" id="main_nav">
+                  <ul className="navbar-nav">
+                    {/* <li className="nav-item">
                     <Link className="nav-link" href="/about">
                       Aboutus
                     </Link>
                   </li> */}
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/">
-                      Home
-                    </Link>
-                  </li>
-                  {/* <li className="nav-item">
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/">
+                        Home
+                      </Link>
+                    </li>
+                    {/* <li className="nav-item">
                     <Link className="nav-link" href="#" target="_blank">
                       Agent Finder
                     </Link>
                   </li> */}
-                  <li className="nav-item">
-                    <Link
-                      className="nav-link"
-                      href="https://builder.admin.terraterri.com"
-                    >
-                      About us
-                    </Link>
-                  </li>
-                  {/* <li className="nav-item">
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        href="https://builder.admin.terraterri.com"
+                      >
+                        About us
+                      </Link>
+                    </li>
+                    {/* <li className="nav-item">
                     <Link className="nav-link" href="/register">
                       Post Property
                     </Link>
                   </li> */}
-                  <li className="nav-item">
-                    <Link
-                      className="nav-link"
-                      href="https://expo.terraterri.com/"
-                      target="_blank"
-                    >
-                      International
-                    </Link>
-                  </li>
-                  {/* <li className="nav-item">
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        href="https://expo.terraterri.com/"
+                        target="_blank"
+                      >
+                        International
+                      </Link>
+                    </li>
+                    {/* <li className="nav-item">
                     <Link
                       className="nav-link dropdown-toggle"
                       href="#"
@@ -169,15 +169,15 @@ export default function Home() {
                       </li>
                     </ul>
                   </li> */}
-                  <li className="nav-item">
-                    <Link
-                      className="nav-link "
-                      href="franchise"
-                      
-                    >
-                      Own a Franchise
-                    </Link>
-                    {/* <ul className="dropdown-menu fade-down">
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link "
+                        href="franchise"
+
+                      >
+                        Own a Franchise
+                      </Link>
+                      {/* <ul className="dropdown-menu fade-down">
                       <li>
                         <Link className="dropdown-item" href="/paragon-meta">
                           Paragon
@@ -200,33 +200,33 @@ export default function Home() {
                       </li>
                     
                     </ul> */}
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="buddy-service">
-                      Buddy Services
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/career">
-                      EMI Calculator
-                    </Link>
-                  </li>
-            </ul>
-         
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="buddy-service">
+                        Buddy Services
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/career">
+                        EMI Calculator
+                      </Link>
+                    </li>
+                  </ul>
+
+                </div>
               </div>
-            </div>
-            {/* <div className="col-md-1">
+              {/* <div className="col-md-1">
               {" "}
               <img src="assets/img/house.jpg" className="profImg" />
             </div> */}
-          </nav>
+            </nav>
 
-          <div className="mobile-toggle">
-            <HiMiniBars3 onClick={() => setShow(true)} />
+            <div className="mobile-toggle">
+              <HiMiniBars3 onClick={() => setShow(true)} />
+            </div>
           </div>
-        </div>
-      </header>
-        </section>
+        </header>
+      </section>
       <Offcanvas show={show} onHide={() => setShow(false)}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Sign in to get a personalised feed!</Offcanvas.Title>
@@ -250,6 +250,20 @@ export default function Home() {
             </li>
             <li>
               <Link href="/career">Careers</Link>
+            </li>
+            <li>
+              <Link
+
+                href="franchise"
+
+              >
+                Own a Franchise
+              </Link>
+            </li>
+            <li>
+              <Link href="buddy-service">
+                Buddy Services
+              </Link>
             </li>
             <li>
               <Link href="/contact">Contactus</Link>

@@ -45,9 +45,9 @@
 
     .card__caption {
         margin-top: 0;
-    
+
     }
-  
+
 
     .card__title {
         font-size: 15px;
@@ -112,10 +112,12 @@
         left: 85%;
 
     }
+
     .navbar .nav-item .nav-link {
         margin-right: 10px !important;
         font-size: 15px;
     }
+
     .card__caption {
         position: absolute;
         top: 130%;
@@ -181,6 +183,7 @@
     .content-5 h3 {
         font-size: 30px;
     }
+
     .card__caption {
         position: absolute;
         top: 120%;
@@ -268,6 +271,7 @@
         margin: 10px auto;
 
     }
+
     .card__caption {
         position: absolute;
         top: 125%;
@@ -396,13 +400,16 @@
     .content-5 h2 {
         font-size: 18px;
     }
+
     .content-2 h4 {
         font-size: 20px;
     }
+
     .content-2 h2 {
 
         font-size: 20px;
     }
+
     .content-2 h3 {
         color: #ff0d0d;
         font-size: 30px;
@@ -411,6 +418,7 @@
         left: 60px;
         top: 110px;
     }
+
     .card__caption {
         position: absolute;
         top: 116%;
@@ -461,21 +469,27 @@
         font-size: 16px;
         line-height: 30px;
     }
-    .content-3{
+
+    .content-3 {
         display: none;
     }
-    .content-4{
+
+    .content-4 {
         display: none;
     }
-    .content-5{
+
+    .content-5 {
         display: none;
     }
-    .content-2{
+
+    .content-2 {
         display: none;
     }
-    .content-1{
+
+    .content-1 {
         display: none;
     }
+
     .card__caption {
         position: absolute;
         top: 122%;

@@ -13958,6 +13958,7 @@ button.lists_out {
 .cardtxt:hover .contentt {
     transform: translateY(0);
     opacity: 1;
+    width: 100%;
 }
 
 .cardt_inr {
