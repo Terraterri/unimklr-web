@@ -12,7 +12,7 @@ const international = () => {
             <div className='int_iner_sec'>
             <div className='text-center inner_text'>
             <h4>Launching Soon..</h4>
-            <h3>unimakler international</h3>
+            <h3>Unimakler International</h3>
             </div>
 
             <Carousel>
