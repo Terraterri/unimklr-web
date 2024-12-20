@@ -83,11 +83,12 @@ const BuddyService = () => {
                                 <div class="content_block_3">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <h2>About Buddy</h2>
+                                            <h2>About Unimakler Buddy Service
+                                            </h2>
                                         </div>
                                         <div class="text">
-                                            <p> Unimakler Buddy is a dedicated real estate professional who facilitates the buying, selling, or renting of properties on behalf of clients. With in-depth knowledge of the local real estate market, assist clients in pricing properties, market listings, and negotiate deals. Acting as intermediary Buddy guide clients through the complex process, handle legal paperwork, and strive to achieve the best possible outcomes. </p>
-                                            <p> Ultimately, Buddy goal is to facilitate successful real estate transactions while prioritizing their clients' needs. </p>
+                                            <p> Unimakler Buddy is your dedicated real estate professional, committed to facilitating seamless property transactions. Whether you’re buying, selling, or renting, our Buddies bring in-depth knowledge of the local market to help you price properties accurately, market listings effectively, and negotiate deals to achieve the best outcomes. Acting as a reliable intermediary, your Buddy guides you through the complex processes, handles legal documentation, and ensures a smooth experience tailored to your needs.</p>
+                                            <p> The ultimate goal of a Unimakler Buddy is to deliver successful real estate transactions while keeping your priorities at the forefront. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -130,8 +131,9 @@ const BuddyService = () => {
                                                         </div>
                                                     </div>
                                                     <div className='col-md-4 '>
-                                                        <div class="abcd-box orange-bg wi-50">
-                                                            <h5> CLIENT-CENTRIC APPROACH </h5>
+                                                        <div class="abcd-box grey-bg wi-50">
+                                                            <h5> TECH
+                                                            SAVVY </h5>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -111,69 +111,56 @@ export default function Home() {
                       Agent Finder
                     </Link>
                   </li> */}
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <Link
                         className="nav-link"
-                        href="https://builder.admin.terraterri.com"
+                        href=" "
                       >
                         About us
                       </Link>
-                    </li>
+                    </li> */}
                     {/* <li className="nav-item">
                     <Link className="nav-link" href="/register">
                       Post Property
                     </Link>
                   </li> */}
+
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        target="_blank"
+                      >
+                        About us
+                      </Link>
+                      <ul className="dropdown-menu fade-down">
+                        <li>
+                          <a className="dropdown-item" href="about">
+                            About Company
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="ourService">
+                            Our Services
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
                     <li className="nav-item">
                       <Link
                         className="nav-link"
-                        href="https://expo.terraterri.com/"
+                        href=" "
                         target="_blank"
                       >
                         International
                       </Link>
                     </li>
-                    {/* <li className="nav-item">
-                    <Link
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      target="_blank"
-                    >
-                      International
-                    </Link>
-                    <ul className="dropdown-menu fade-down">
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Dubai
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Usa
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Canada
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          United Kingdom
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Australia
-                        </a>
-                      </li>
-                    </ul>
-                  </li> */}
+
                     <li className="nav-item">
                       <Link
                         className="nav-link "
                         href="franchise"
-
                       >
                         Own a Franchise
                       </Link>
@@ -208,7 +195,7 @@ export default function Home() {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" href="/career">
-                        EMI Calculator
+                        Careers
                       </Link>
                     </li>
                   </ul>
