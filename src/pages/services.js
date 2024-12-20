@@ -720,12 +720,13 @@ export default function Services({ data, totalPages, currentPage }) {
                         </div>
                         {projectsList?.length &&
                           projectsList.map((item) => (
-                            <div className="col-md-6" key={item?.id}>
+                            <div className="col-md-12" key={item?.id}>
+                              <div className="p-relative">
                               <Link
                                 href={`/singleProject/${item?.id}`}
                                 className="list-itms"
                               >
-                                <div className="listing-item">
+                                <div className="listing-item d-flex">
                                   {item?.listing_type_id === 3 && (
                                     <h5 className="met_out">Meta View</h5>
                                   )}
@@ -856,6 +857,7 @@ export default function Services({ data, totalPages, currentPage }) {
                                   +{item.total_matching_projects} Listings
                                 </button>
                               )}
+                              </div>
                             </div>
                           ))}
                       </div>

@@ -8,7 +8,7 @@ import { FiArrowDownCircle } from "react-icons/fi";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { getAllProjects } from "@/components/endPoints/projectEndpoints";
 import Specific_Tab from "@/components/libs/specification_tab";
-import ContactTabs from "@/components/libs/contact";
+import ContactTabs from "@/components/libs/contact";  
 import { useContext, useEffect, useState } from "react";
 
 import "lightbox.js-react/dist/index.css";
@@ -451,12 +451,12 @@ export default function PropertySingle() {
       {project != null && !isLoading && (
         <main className="main">
           <div className="property-single py-120">
-            <div className="container-fluid px-20">
+            <div className="container">
               <div className="row">
                 <div className="col-lg-12 mb-0">
                   <div className="property-single-wrapper">
                     <div className="row">
-                      <div className="col-md-9">
+                      <div className="col-md-12">
                         <div className="row">
                           <div className="col-md-10">
                             <Carousel
@@ -483,18 +483,27 @@ export default function PropertySingle() {
                           </div>
                         </div>
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-md-12">
                         <div className="property-single-meta">
                           <div className="property-single-meta-left">
-                            <h4>{project?.project_name}</h4>
-                            <p className="mb-0 address_out">
-                              <IoLocationSharp /> {project?.locality} ,{" "}
-                              {project?.sub_locality} , {project?.city_name}
-                            </p>
-                            <p className="buldr_nme">
-                              By : <span>{project?.builder_name}</span>
-                            </p>
-                            <p className="price_nme">
+<div className="row">
+<div className="col-md-4">
+  <div className="size_rnge">
+  <h4>{project?.project_name}</h4>
+
+<p className="mb-0">
+  <IoLocationSharp /> {project?.locality} ,{" "}
+  {project?.sub_locality} , {project?.city_name}
+</p>
+
+<p className="buldr_name">
+  By : <span>{project?.builder_name}</span>
+</p>
+  </div>
+</div>
+<div className="col-md-4">
+  <div className="size_rnge">
+  <p className="price_name">
                               {project?.listing_type_id == 1 ? (
                                 <label className="starts_cls">
                                   Price Starts From
@@ -506,10 +515,11 @@ export default function PropertySingle() {
                                 {convertToIndianRupees(projectAnalyzeData?.min)}
                               </b>{" "}
                             </p>
-                            <p className="rng_ot">
+                            <p className="rng_ott">
                               {project.listing_type_id == 1 ? (
+
                                 <>
-                                  <span className="starts_cls">
+                                  <span className="starts_clss">
                                     Size Ranges
                                   </span>{" "}
                                   <span>
@@ -520,10 +530,11 @@ export default function PropertySingle() {
                                       {project?.sizeRepresentation}
                                     </small>
                                   </span>
+
                                 </>
                               ) : (
                                 <>
-                                  <span className="starts_cls">Size</span>
+                                  <span className="starts_clss">Size</span>
                                   <span>
                                     {project?.super_built_up_area}
                                     <small className="sml_out">
@@ -534,10 +545,13 @@ export default function PropertySingle() {
                                 </>
                               )}
                             </p>
-                            <div className="card p-0">
+  </div>
+</div>
+
+<div className="col-md-4">
+<div className="card p-0">
                               <p className="d-flex">
                                 <span>{project?.possession_status} </span>{" "}
-                                {/* <span> Year Built : {project?.possession_by}</span> */}
                                 <span>{project?.possession_by}</span>
                               </p>
 
@@ -550,6 +564,13 @@ export default function PropertySingle() {
                                 <span>{project?.propertyId}</span>
                               </p>
                             </div>
+</div>
+
+</div>
+                            
+
+                            
+                            
                           </div>
                           {/* <div className="property-single-meta-right">
                       <div className="property-single-rating-box">
@@ -647,7 +668,7 @@ export default function PropertySingle() {
                 </div> */}
 
                 {/* --------------------------------- popup buton -------------------------------- */}
-                <div className="row rigth_frm mt-4">
+                <div className="row rigth_frm mt-2">
                   <div className="col-md-8">
                     <div
                       className={
@@ -1407,14 +1428,38 @@ export default function PropertySingle() {
                           )}
                       </div>
                     </div>
+                    <div className="property-single-content" id="bankln-id">
+                    <h4>Approved Bank Loans</h4>
+                    <div className="box_ot"> </div>
+                    <div className="property-single-description">
+                      <div className="row mt-3 align-items-center">
+                        {banks.map((bank) => (
+                          <div className="col-md-2 text-left lon-img">
+                            <img
+                              src={bank.logo}
+                              className="d-block w-100"
+                              width={400}
+                              height={100}
+                              alt="thumbnail"
+                              loading="lazy"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                  <div className="col-md-4 mt-4">
-                    <div
+                  </div>
+                  <div className="col-md-4">
+                    {/* <div
                       className={
                         height <= 500 || height >= 3700
                           ? "property-anchor-nav fixed-sidebar"
                           : "property-anchor-nav fixed-sidebar tab_sectneww"
                       }
+                      id="contact-id"
+                    > */}
+                    {/* <div
+                      
                       id="contact-id"
                     >
                       <div className="cont_inform">
@@ -1466,7 +1511,12 @@ export default function PropertySingle() {
                           </div>
                         </>
                       )}
+                    </div> */}
+
+                    <div className="box-generic">
+                    <h3>Franchise Agent</h3>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -1476,26 +1526,7 @@ export default function PropertySingle() {
             <div className="container">
               <div className="row">
                 <div className="col-md-8">
-                  <div className="property-single-content" id="bankln-id">
-                    <h4>Approved Bank Loans</h4>
-                    <div className="box_ot"> </div>
-                    <div className="property-single-description">
-                      <div className="row mt-3 align-items-center">
-                        {banks.map((bank) => (
-                          <div className="col-md-2 text-left lon-img">
-                            <img
-                              src={bank.logo}
-                              className="d-block w-100"
-                              width={400}
-                              height={100}
-                              alt="thumbnail"
-                              loading="lazy"
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+               
                 </div>
                 <div className="col-md-4">
                   {/* <div className="property-single-content loan-bx-shadow">
