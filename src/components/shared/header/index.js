@@ -150,8 +150,7 @@ export default function Home() {
                     <li className="nav-item">
                       <Link
                         className="nav-link"
-                        href=" "
-                        target="_blank"
+                        href="/international"
                       >
                         International
                       </Link>
