@@ -2263,11 +2263,13 @@ color: #004aac;
   color: #fff;
   padding: 7px;
 }
-.facebook_icon{
+
+.facebook_icon {
   background: #004aac;
 }
-.insta_icon{
-background: #f77727;
+
+.insta_icon {
+  background: #f77727;
 }
 
 
@@ -2308,19 +2310,24 @@ background: #f77727;
 .services-flex {
   display: flex;
 }
+
 .widget-content.content {
   margin-left: 40px;
 }
+
 .footer-bottom {
   position: relative;
   display: block;
   background-color: #272a2f;
   padding: 10px 0;
 }
+
 .pull-left {
   float: left;
 }
-.footer-bottom p, .footer-bottom a {
+
+.footer-bottom p,
+.footer-bottom a {
   color: #ffffff80;
   font-size: 16px;
 }
@@ -2328,12 +2335,33 @@ background: #f77727;
 .pull-right {
   float: right;
 }
+
 .footer-bottom .footer-nav li {
   position: relative;
   display: inline-block;
   float: left;
   margin-right: 30px;
 }
+
 .footer-bottom .footer-nav li:last-child {
   margin: 0 !important;
+}
+
+.miniNav {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0px 0px 0px;
+  border-bottom: 2px solid #f77727;
+}
+
+.miniNav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.miniNav ul li {
+  padding: 5px 10px;
+  border-right: 1px solid #004aac;
 }

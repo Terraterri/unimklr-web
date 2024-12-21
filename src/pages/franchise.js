@@ -206,6 +206,19 @@ const Franchise = () => {
           </div>
         </div>
 
+
+        <div className="miniNav">
+          <ul>
+            <li><a href="#choose">Why Choose</a></li>
+            <li><a href="#service">Our Service</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#support"> Support to Franchise</a></li>
+            <li><a href="#keybenefits"> Benefits to franchise</a></li>
+            <li><a href="#about">About Unimakler</a></li>
+            <li><a href="#bookFranchise">Book Your Franchise</a></li>
+          </ul>
+        </div>
+
         <div className="video-overview-area ptb-100">
           <div className="container">
             <div className="franchise">
@@ -377,14 +390,7 @@ const Franchise = () => {
           </div>
         </div>
 
-
-
-
-
-
-
-
-        <div className="location-area pb-20 category-area1">
+        <div id="service" className="location-area pb-20 category-area1">
           <div className="container">
             <div className="title_ot text-center mb-5">
               {/* <p className="welcomBout">Our Distinctive Products</p> */}
@@ -707,7 +713,6 @@ const Franchise = () => {
           </div>
         </div>
 
-
         {/* <div id="services" className=" with-black-bg pt-100 pb-70">
           <div className="container">
             <div className="row justify-content-center">
@@ -794,8 +799,6 @@ const Franchise = () => {
             </div>
           </div>
         </div> */}
-
-
 
         <div id="technology" className="technology-section ptb-100">
           <div className="container">
@@ -908,8 +911,8 @@ const Franchise = () => {
                   <figure class="card__thumb">
                     <img src="assets/img/support-1.png" className="image" />
                     <h2 class="card__title">
-                        Startup Assistance
-                      </h2>
+                      Startup Assistance
+                    </h2>
                     <figcaption class="card__caption">
                       {/* <h2 class="card__title">
                         Startup Assistance
@@ -927,9 +930,9 @@ const Franchise = () => {
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/support-2.png" className="image" />
-                      <h2 class="card__title">
-                        Comprehensive Training
-                      </h2>
+                    <h2 class="card__title">
+                      Comprehensive Training
+                    </h2>
                     <figcaption class="card__caption">
                       <p class="card__snippet">
                         Gain industry knowledge and skills through detailed online and offline training programs. <br /><br /> Our Business Development Manager will provide on-field training, covering customer engagement, project detailing, negotiations, and deal closure processes to ensure your success in the real estate sector.
@@ -960,9 +963,9 @@ const Franchise = () => {
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/support-3.png" className="image" />
-                      <h2 class="card__title">
-                        CRM Support
-                      </h2>
+                    <h2 class="card__title">
+                      CRM Support
+                    </h2>
                     <figcaption class="card__caption">
                       <p class="card__snippet">
                         Leverage advanced and robust customer relationship management tools to streamline your sales operations. <br /><br /> Our CRM facilitates efficient customer calls, sharing project details, scheduling site visits, sending automated messages, and more, ensuring seamless and effective lead management.
@@ -992,9 +995,9 @@ const Franchise = () => {
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/support-4.png" className="image" />
-                      <h2 class="card__title">
-                        Meta Office
-                      </h2>
+                    <h2 class="card__title">
+                      Meta Office
+                    </h2>
                     <figcaption class="card__caption">
                       <p class="card__snippet">
                         Experience a dedicated virtual office space in the metaverse for seamless and immersive interactions. <br /><br /> Customers can walk into your office as avatars and engage in real-time conversations, delivering an unparalleled and futuristic experience.
@@ -1024,9 +1027,9 @@ const Franchise = () => {
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/support-5.png" className="image" />
-                      <h2 class="card__title">
-                        Metaverse Real Estate Expo
-                      </h2>
+                    <h2 class="card__title">
+                      Metaverse Real Estate Expo
+                    </h2>
                     <figcaption class="card__caption">
                       <p class="card__snippet">
                         Showcase your projects and properties in innovative Metaverse virtual expos, connecting with both local and global audiences. <br /><br /> Interact with potential customers in real-time, offering a dynamic and engaging experience like never before.
@@ -1056,9 +1059,9 @@ const Franchise = () => {
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/support-6.png" className="image" />
-                      <h2 class="card__title">
-                        Assured Leads
-                      </h2>
+                    <h2 class="card__title">
+                      Assured Leads
+                    </h2>
                     <figcaption class="card__caption">
                       <p class="card__snippet">
                         Receive guaranteed project-specific leads to kickstart and grow your business. <br /><br /> These leads are generated through various real estate marketplaces, social media platforms, and online channels, ensuring a steady flow of potential clients for your projects.
@@ -1073,9 +1076,9 @@ const Franchise = () => {
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/micropic.jpg" className="image" />
-                      <h2 class="card__title">
-                        Micro Website
-                      </h2>
+                    <h2 class="card__title">
+                      Micro Website
+                    </h2>
                     <figcaption class="card__caption">
                       <p class="card__snippet">
                         A personalized website designed to enhance your online presence and marketing efforts. <br /><br /> Display all your projects and properties seamlessly, providing potential clients with easy access to detailed information and improving your overall visibility in the market.
@@ -1089,9 +1092,9 @@ const Franchise = () => {
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/bisunness.jpg" className="image" />
-                      <h2 class="card__title">
-                        Business Monitoring
-                      </h2>
+                    <h2 class="card__title">
+                      Business Monitoring
+                    </h2>
                     <figcaption class="card__caption">
                       <p class="card__snippet">
                         Proactive support for franchisees, ensuring smooth day-to-day operations and effective performance tracking. <br /><br /> Stay on top of your business with regular updates, insights, and guidance to optimize efficiency and achieve your goals.
@@ -1105,9 +1108,9 @@ const Franchise = () => {
                 <div class="card">
                   <figure class="card__thumb">
                     <img src="assets/img/supot.jpg" className="image" />
-                      <h2 class="card__title">
-                        BDM Support
-                      </h2>
+                    <h2 class="card__title">
+                      BDM Support
+                    </h2>
                     <figcaption class="card__caption">
                       <p class="card__snippet">
                         Dedicated assistance from a Business Development Manager to drive your growth and success. <br /> <br /> Your BDM will regularly visit your location, providing hands-on guidance and support for business processes, including strategy, execution, and achieving targets effectively.
@@ -1327,7 +1330,7 @@ const Franchise = () => {
           </div>
         </div>
 
-        <section className="contact-section">
+        <section id="bookFranchise" className="contact-section">
           <div className="auto-container">
             <div className="sec-title centred">
               <h2>Book Your Franchise Now</h2>
