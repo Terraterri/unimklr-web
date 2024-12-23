@@ -38,9 +38,22 @@ const Franchise = () => {
 
   ////// on click class adding start/////////
 
-  const handleClassAdd = () => {
-    setIsClassAdd(true);
-  }
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -180; // Adjust the offset value as needed
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+    }
+
+    // Toggle the active state
+    setIsClassAdd((prevState) => !prevState);
+  };
 
   ///////// on click class adding end/////////
 
@@ -237,13 +250,15 @@ const Franchise = () => {
           : ''
           }`}>
           <ul>
-            <li><a onClick={handleClassAdd} href="#choose">Why Choose</a></li>
-            <li><a href="#service">Our Service</a></li>
-            <li><a href="#technology">Technology</a></li>
-            <li><a href="#support"> Support to Franchise</a></li>
-            <li><a href="#keybenefits"> Benefits to franchise</a></li>
-            <li><a href="#about">About Unimakler</a></li>
-            <li><a href="#bookFranchise">Book Your Franchise</a></li>
+
+            <li><a onClick={() => scrollToElement("choose")}
+            >Why Choose</a></li>
+            <li><a  onClick={() => scrollToElement("service")} >Our Service</a></li>
+            <li><a  onClick={() => scrollToElement("technology")} >Technology</a></li>
+            <li><a  onClick={() => scrollToElement("support")}> Support to Franchise</a></li>
+            <li><a  onClick={() => scrollToElement("keybenefits")} > Benefits to franchise</a></li>
+            <li><a  onClick={() => scrollToElement("about")} >About Unimakler</a></li>
+            <li><a  onClick={() => scrollToElement("bookFranchise")} >Book Your Franchise</a></li>
           </ul>
         </div>
 
