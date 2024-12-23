@@ -9730,6 +9730,7 @@ table.table.table_nw p {
     left: 0px;
     right: 0px;
     top: 115px;
+    z-index: 999999 !important;
 }
 
 .tab-main {
@@ -17893,4 +17894,9 @@ section.header-part.active .header {
     color: #fff;
     text-align: center;
     font-size: 50px;
+}
+
+
+.miniNav.shadow-md ul li a{
+cursor: pointer;
 }

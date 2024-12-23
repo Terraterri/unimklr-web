@@ -687,15 +687,14 @@ p {
 
 .tech1-img:before {
   background-color: #f77727;
-  width: 32%;
-  height: 45%;
+  width: 415px;
+  height: 298px;
   position: absolute;
   content: '';
-  z-index: 0;
-  margin: 44px 0px 0px 43px;
-  left: 50px;
+  z-index: 1;
+  margin: 44px 100px 0px 0px;
+  left: 43px;
 }
-
 .technology-section img {
   width: 450px;
   height: 300px;
@@ -714,7 +713,7 @@ p {
   margin-top: 25px;
 }
 
-.tech2-img:before {
+/* .tech2-img:before {
   background-color: #f77727;
   width: 32%;
   height: 45%;
@@ -723,26 +722,27 @@ p {
   z-index: 0;
   margin: 44px 100px 0px 0px;
   right: 0;
-}
-
+} */
 
 .tech2-img:before {
   background-color: #f77727;
-  width: 32%;
-  height: 45%;
+  width: 415px;
+  height: 298px;
   position: absolute;
   content: '';
-  z-index: 0;
+  z-index: 1;
   margin: 44px 100px 0px 0px;
-  right: 0;
+  right: -56px;
 }
-
 .card.realestate {
   box-shadow: 0 6px 16px rgb(52 105 203 / 16%);
   border-radius: 15px;
   background-color: #FFFFFF;
   border: 5px solid #004aac;
   margin-bottom: 20px;
+}
+.tech2-img,.tech1-img {
+  position: relative;
 }
 
 /* .image {

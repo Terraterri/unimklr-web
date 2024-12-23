@@ -1373,7 +1373,7 @@ const Franchise = () => {
           </div>
         </div>
 
-        <section id="bookFranchise" className="contact-section">
+        <section id="bookFranchise" className="contact-section pt-2">
           <div className="auto-container">
             <div className="sec-title centred">
               <h2>Book Your Franchise Now</h2>
