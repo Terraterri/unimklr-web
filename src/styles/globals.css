@@ -2365,3 +2365,12 @@ color: #004aac;
   padding: 5px 10px;
   border-right: 1px solid #004aac;
 }
+.miniNav.shadow-md {
+  position: fixed;
+  top: 55px;
+  z-index: 9;
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}

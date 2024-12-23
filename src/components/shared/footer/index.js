@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
                 <ul className="info-list clearfix">
                   <li>
-                  <IoMdMail />
+                    <IoMdMail />
                     <a href="mailto:info@unimakler.com">info@unimakler.com</a>
                   </li>
                 </ul>
@@ -58,7 +58,7 @@ const Footer = () => {
                   <ul className="icons_icons">
                     <li>
                       <a href="https://www.facebook.com/profile.php?id=100093279117105" target="_blank" rel="noopener noreferrer">
-                        
+
                         <FaFacebookF className='facebook_icon' />
 
                       </a>
@@ -99,6 +99,11 @@ const Footer = () => {
                     </li>
                     <li>
                       <a href="/ourService">Our Services</a>
+                    </li>
+                    <li>
+                      <a href="/franchise">
+                        Own a Franchise
+                      </a>
                     </li>
                     <li>
                       <a href="buddy-service">Buddy Service</a>

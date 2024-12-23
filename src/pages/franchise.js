@@ -15,6 +15,7 @@ import { BsHouseUpFill } from "react-icons/bs";
 import { AiOutlineCluster } from "react-icons/ai";
 import { IoSettings } from "react-icons/io5";
 
+
 const Franchise = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -32,6 +33,30 @@ const Franchise = () => {
   const [otp, setOtp] = useState("");
   const [isPopupOpen, setPopupOpen] = useState(null);
   const [isPopupOpenTwo, setPopupOpenTwo] = useState(null);
+  const [isSticky, setIsSticky] = useState(false);
+  const [isclassAdd, setIsClassAdd] = useState(false);
+
+  ////// on click class adding start/////////
+
+  const handleClassAdd = () => {
+    setIsClassAdd(true);
+  }
+
+  ///////// on click class adding end/////////
+
+
+  ///////on scroll class adding start////
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show sticky header after scrolling 100px
+      setIsSticky(window.scrollY > 500);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  ///////on scroll class adding end////
 
   const popupContent = {
     RFranchise: {
@@ -207,9 +232,12 @@ const Franchise = () => {
         </div>
 
 
-        <div className="miniNav">
+        <div className={`miniNav ${isSticky
+          ? 'shadow-md'
+          : ''
+          }`}>
           <ul>
-            <li><a href="#choose">Why Choose</a></li>
+            <li><a onClick={handleClassAdd} href="#choose">Why Choose</a></li>
             <li><a href="#service">Our Service</a></li>
             <li><a href="#technology">Technology</a></li>
             <li><a href="#support"> Support to Franchise</a></li>
