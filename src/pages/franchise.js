@@ -253,12 +253,12 @@ const Franchise = () => {
 
             <li><a onClick={() => scrollToElement("choose")}
             >Why Choose</a></li>
-            <li><a  onClick={() => scrollToElement("service")} >Our Service</a></li>
-            <li><a  onClick={() => scrollToElement("technology")} >Technology</a></li>
-            <li><a  onClick={() => scrollToElement("support")}> Support to Franchise</a></li>
-            <li><a  onClick={() => scrollToElement("keybenefits")} > Benefits to franchise</a></li>
-            <li><a  onClick={() => scrollToElement("about")} >About Unimakler</a></li>
-            <li><a  onClick={() => scrollToElement("bookFranchise")} >Book Your Franchise</a></li>
+            <li><a onClick={() => scrollToElement("service")} >Our Service</a></li>
+            <li><a onClick={() => scrollToElement("technology")} >Technology</a></li>
+            <li><a onClick={() => scrollToElement("support")}> Support to Franchise</a></li>
+            <li><a onClick={() => scrollToElement("keybenefits")} > Benefits to franchise</a></li>
+            {/* <li><a  onClick={() => scrollToElement("about")} >About Unimakler</a></li> */}
+            <li><a onClick={() => scrollToElement("bookFranchise")} >Book Your Franchise</a></li>
           </ul>
         </div>
 
@@ -756,93 +756,6 @@ const Franchise = () => {
           </div>
         </div>
 
-        {/* <div id="services" className=" with-black-bg pt-100 pb-70">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="main-section-title">
-                <span className="text-white">
-                  <h3>Our Core Services</h3>
-                </span>
-              </div>
-              <div className="row">
-                <div className="col-md-3">
-                  <div className="cccc2blue">
-                    <div className="cccc2inner">
-                      <h2>Lorem Ipsum
-                      </h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc2orng">
-                    <div className="cccc2inner">
-                      <h2>Lorem Ipsum
-                      </h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc2blue">
-                    <div className="cccc2inner">
-                      <h2>Lorem Ipsum
-                      </h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc2orng">
-                    <div className="cccc2inner">
-                      <h2>Lorem Ipsum
-                      </h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc2blue">
-                    <div className="cccc2inner">
-                      <h2>Lorem Ipsum
-                      </h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc2orng">
-                    <div className="cccc2inner">
-                      <h2>Lorem Ipsum
-                      </h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc2blue">
-                    <div className="cccc2inner">
-                      <h2>Lorem Ipsum
-                      </h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="cccc2orng">
-                    <div className="cccc2inner">
-                      <h2>Lorem Ipsum
-                      </h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo suscipit amet officia.</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         <div id="technology" className="technology-section ptb-100">
           <div className="container">
             <div className="row justify-content-center">
@@ -1167,78 +1080,6 @@ const Franchise = () => {
           </div>
         </div>
 
-        {/* <div id="keybenefits" className="get-introduced-area ptb-100">
-          <div className="container">
-            <span className="test text-center pb-5">
-              <h3>Key Benefits to franchise</h3>
-            </span>
-            <div className="row">
-              <div className="col-lg-6 col-md-10 col-sm-12">
-                <div className="get-introduced-content">
-
-                  <div className="row justify-content-center">
-                    <div className="col-lg-10 col-md-12 col-sm-10">
-                      <div className="introduced-inner-box blue-bg">
-                        <div className="icon">
-                          <FcMultipleInputs />
-                          <span>Multiple Revenue Streams</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-10 col-md-12 col-sm-10">
-                      <div className="introduced-inner-box orange-bg">
-                        <div className="icon">
-                          <FaCity />
-                          <span>Pan India Community</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-10 col-md-12 col-sm-10">
-                      <div className="introduced-inner-box blue-bg">
-                        <div className="icon">
-                          <FaShareNodes />
-                          <span>Best Revenue Sharing</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-10 col-md-12 col-sm-10">
-                      <div className="introduced-inner-box orange-bg">
-                        <div className="icon">
-                          <IoSettings />
-                          <span>Next-Level Business Training</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-10 col-md-12 col-sm-10">
-                      <div className="introduced-inner-box blue-bg">
-                        <div className="icon">
-                          <MdAssuredWorkload />
-                          <span>Assured Projects-Specific Leads</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-10 col-md-12 col-sm-10">
-                      <div className="introduced-inner-box orange-bg">
-                        <div className="icon">
-                          <MdAddHomeWork />
-                          <span>Business Development Manager Support</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="introduced-counter-item">
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-10 col-sm-10">
-                <div className="get-introduced-image">
-                  <img src="assets/img/about-intro-bk.jpg" alt="image" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         <div id="keybenefits" className="get-introduced-area ptb-100">
           <div className="container">
             <span className="test text-center pb-5">
@@ -1334,39 +1175,6 @@ const Franchise = () => {
               <div className="col-lg-5 col-md-12 col-sm-12">
                 <div className="get-introduced-image">
                   <img src="assets/img/about-intro-bk.jpg" alt="image" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div id="about" className="video-overview-area ptb-100">
-          <div className="container">
-            <div className="about-head">
-              <span className="test text-start">
-                <h3>About Unimakler</h3>
-              </span>
-            </div>
-            <div className="about-section">
-              <div className="row align-items-center">
-                <div className="col-lg-6 col-md-6">
-                  <div className="about-image">
-                    <img src="assets/img/banner-1.jpg" alt="image" />
-                  </div>
-                </div>
-                <div className="col-lg-6 col-md-6">
-                  <div className="video-overview-content">
-                    <div className="overview-inner-box ">
-                      <p>UNIMAKLER RELATORS PRIVATE LIMITED is a professional Real Estate consulting company, that includes
-                        sales and leasing of Residential, commercial, Industrial, Agriculture, Housing loans and Interiors
-                        designing services.</p>
-                      <p> Unimakler provides bespoke exclusive project marketing services to property builders and developers
-                        by providing successful, reasonable and economical solutions that strategically position the project
-                        in the target Market.</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
