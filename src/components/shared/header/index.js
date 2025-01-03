@@ -81,49 +81,17 @@ export default function Home() {
                   />
                 </Link>
                 <div className="mobile-menu-right">
-                  {/* <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#main_nav"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-btn-icon">
-                    <i className="far fa-bars" />
-                  </span>
-                </button> */}
+               
                 </div>
                 <div className="collapse navbar-collapse" id="main_nav">
                   <ul className="navbar-nav">
-                    {/* <li className="nav-item">
-                    <Link className="nav-link" href="/about">
-                      Aboutus
-                    </Link>
-                  </li> */}
+           
                     <li className="nav-item">
                       <Link className="nav-link" href="/">
                         Home
                       </Link>
                     </li>
-                    {/* <li className="nav-item">
-                    <Link className="nav-link" href="#" target="_blank">
-                      Agent Finder
-                    </Link>
-                  </li> */}
-                    {/* <li className="nav-item">
-                      <Link
-                        className="nav-link"
-                        href=" "
-                      >
-                        About us
-                      </Link>
-                    </li> */}
-                    {/* <li className="nav-item">
-                    <Link className="nav-link" href="/register">
-                      Post Property
-                    </Link>
-                  </li> */}
+                   
 
                     <li className="nav-item">
                       <Link
@@ -135,14 +103,14 @@ export default function Home() {
                       </Link>
                       <ul className="dropdown-menu fade-down">
                         <li>
-                          <a className="dropdown-item" href="about">
+                          <Link className="dropdown-item" href="about">
                             About Company
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="ourService">
+                          <Link className="dropdown-item" href="ourService">
                             Our Services
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
@@ -163,29 +131,6 @@ export default function Home() {
                       >
                         Own a Franchise
                       </Link>
-                      {/* <ul className="dropdown-menu fade-down">
-                      <li>
-                        <Link className="dropdown-item" href="/paragon-meta">
-                          Paragon
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" href="/builder-box">
-                          BuilderBox
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" href="/estella-meta">
-                          Estella
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" href="/AirPropx">
-                          AirPropX
-                        </Link>
-                      </li>
-                    
-                    </ul> */}
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" href="buddy-service">
@@ -201,10 +146,7 @@ export default function Home() {
 
                 </div>
               </div>
-              {/* <div className="col-md-1">
-              {" "}
-              <img src="assets/img/house.jpg" className="profImg" />
-            </div> */}
+            
             </nav>
 
             <div className="mobile-toggle">
@@ -216,9 +158,7 @@ export default function Home() {
       <Offcanvas show={show} onHide={() => setShow(false)}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Sign in to get a personalised feed!</Offcanvas.Title>
-          {/* <a href="/MainLogin">
-            <button className="sig-in">Sign in</button>
-          </a> */}
+          
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ul className="mobile-nav">
@@ -238,11 +178,7 @@ export default function Home() {
               <Link href="/career">Careers</Link>
             </li>
             <li>
-              <Link
-
-                href="franchise"
-
-              >
+              <Link href="franchise" >
                 Own a Franchise
               </Link>
             </li>

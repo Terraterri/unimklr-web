@@ -3,29 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import Sliderify from "react-sliderify";
-// import Header from "../components/header";
-// import Footer from "../components/footer";
-
-// import AliceCarousel from "react-alice-carousel";
 import {
   convertToIndianRupees,
   downloadURI,
 } from "@/components/libs/higherOderFN";
-import { AiOutlineHome } from "react-icons/ai";
-import { BiSearchAlt2 } from "react-icons/bi";
 import { MdCheckBoxOutlineBlank, MdMyLocation } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
-import { SlLocationPin } from "react-icons/sl";
-// import { BiBed } from "react-icons/bi";
-// import { GiBathtub } from "react-icons/gi";
-// import { TbGeometry } from "react-icons/tb";
-import { HiOutlineCurrencyRupee } from "react-icons/hi2";
-import { LiaCitySolid } from "react-icons/lia";
 import { BsFillPlayFill, BsStarHalf } from "react-icons/bs";
-import { BsStarFill } from "react-icons/bs";
-import { BsStar } from "react-icons/bs";
-import { BiRupee } from "react-icons/bi";
 import { BsArrowRightShort } from "react-icons/bs";
 import {
   getAllCities,
@@ -272,33 +256,7 @@ const villapage = () => {
                                   </p>
                                 </div>
                               </div>
-                              {/* <div className="property-single-meta-right">
-                    <div className="property-single-rating-box">
-                      <h6 className="property-single-price">$20,000</h6>
-                      <div className="property-single-rating">
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <span>5.0 (50 reviews)</span>
-                      </div>
-                    </div>
-                    <div className="property-single-meta-option">
-                      <a href="">
-                        <i className="far fa-share-alt" />
-                      </a>
-                      <a href="">
-                        <i className="far fa-print" />
-                      </a>
-                      <a href="">
-                        <i className="far fa-heart" />
-                      </a>
-                      <a href="">
-                        <i className="far fa-arrows-repeat" />
-                      </a>
-                    </div>
-                  </div> */}
+                           
                             </div>
                           </div>
                         </div>
@@ -402,15 +360,7 @@ const villapage = () => {
                     </div>
                     {/* --------------------------------- popup buton -------------------------------- */}
 
-                    {/* <div
-                                  className="position_lable"
-                                  onClick={() => {
-                                      handleOpenDialog();
-                                  }}
-                              >
-                                  {"contact builder"}
-                              </div> */}
-
+           
                     {/* --------------------------------- popup buton -------------------------------- */}
                     <div className="row rigth_frm">
                       <div className="col-md-8">
@@ -1026,27 +976,7 @@ const villapage = () => {
                           </div>
                         </div>
 
-                        {/* <div className="property-single-content" id="ament-id">
-                      <h4>Amenities</h4>
-                      <div className="property-single-description">
-                        {Object.keys(amenities).length > 0 &&
-                          Object.keys(amenities).map((eminityName) => (
-                            <>
-                              <h5>{eminityName}</h5>
-                              <div className="row">
-                                <ul className="special_featrs">
-                                  {amenities[eminityName].length > 0 &&
-                                    amenities[eminityName].map(
-                                      (aminityResource) => (
-                                        <li>{aminityResource.aminity_name}</li>
-                                      )
-                                    )}
-                                </ul>
-                              </div>
-                            </>
-                          ))}
-                      </div>
-                    </div> */}
+                    
                         <div className="property-single-content" id="specif-id">
                           <h4>Specifications</h4>
                           <div className="property-single-description">
@@ -1069,16 +999,7 @@ const villapage = () => {
                             </SlideshowLightbox>
                           </div>
                         </div>
-                        {/* <div className="property-single-content" id="galery-id">
-                      <h4>Unit Gallery</h4>
-                      <div className="property-single-description">
-                        <div className="singgaller mt-2">
-                          <div className="d-flex">
-                            <UnitGalleryTab unitGallery={unitGallery} />
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
+                     
                         <div
                           className="property-single-content"
                           id="brocher-id"
@@ -1146,12 +1067,7 @@ const villapage = () => {
                       </div>
                       <div className="col-md-4">
                         <div className="floating-btn-position">
-                          {/* <button className="btn btn-primary">
-                        Contact Builder{" "}
-                        <span>
-                          <FiArrowDownCircle />
-                        </span>
-                      </button> */}
+                        
                         </div>
                         <div
                           // className={

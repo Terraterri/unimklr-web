@@ -13042,7 +13042,7 @@ div#contact-id {
 span.radio-icon p {
     margin: 0px !important;
     color: #000 !important;
-    z-index: 999999999999999999999;
+    z-index: 99999 !important;
     position: relative;
     font-size: 15px !important;
     line-height: 24px !important;
@@ -13163,7 +13163,7 @@ span.prp-typ {
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .form-group.secrch-group input::placeholder {

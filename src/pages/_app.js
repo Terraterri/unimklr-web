@@ -1,16 +1,14 @@
 import "@/styles/globals.css";
 import "@/styles/bootstrap.min.css";
 import "@/styles/all-fontawesome.min.css";
-import "@/styles/flaticon.css";
-import "@/styles/animate.min.css";
 import "@/styles/magnific-popup.min.css";
 import "@/styles/nice-select.min.css";
-import "@/styles/jquery-ui.min.css";
+// import "@/styles/jquery-ui.min.css";
 import "@/components/loader/loader.css";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "@/styles/styles.css";
 import "@/styles/responcive.css"
-// import "@/styles/owl.carousel.min.css";
+
 import { Suspense, createContext, useEffect, useState } from "react";
 import Header from "../components/shared/header";
 import Footer from "../components/shared/footer";

@@ -5,20 +5,7 @@ export default function TermsAndConditions() {
   return (
     <>
       <main className="main">
-        {/* <div
-          className="site-breadcrumb"
-          style={{ background: "url(assets/img/breadcrumb/01.jpg)" }}
-        >
-          <div className="container">
-            <h2 className="breadcrumb-title">Terms And Conditions</h2>
-            <ul className="breadcrumb-menu">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li className="active">Terms And Conditions</li>
-            </ul>
-          </div>
-        </div> */}
+      
         <div className="py-120">
           <div className="container">
             <div className="row">
